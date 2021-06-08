@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The Forces of Darkness - Diablo II Modification</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right border-danger" id="sidebar-wrapper">
+     <div class="sticky-top">
+      <div class="sidebar-heading"><a href="index.html"><b>TFoD</b></a></div>
+      <div class="list-group list-group-flush">
+        <a href="changes.html" class="list-group-item active list-group-item-action bg-light">General changes</a>
+        <a href="recipes.html" class="list-group-item list-group-item-action bg-light">Cube recipes</a>
+        <a href="consumables.html" class="list-group-item list-group-item-action bg-light">Consumables</a>
+        <a href="crafting.html" class="list-group-item list-group-item-action bg-light">Crafting recipes</a>
+        <a href="corruptions.html" class="list-group-item list-group-item-action bg-light">Corruptions</a>
+        <a href="runewords.html" class="list-group-item list-group-item-action bg-light">Runewords</a>
+        <a href="mercs.html" class="list-group-item list-group-item-action bg-light">Mercenaries</a>
+        <a href="areas.html" class="list-group-item list-group-item-action bg-light">Level area changes</a>
+        <a href="subquests.html" class="list-group-item list-group-item-action bg-light">Subquests and uberquests</a>
+        <a href="credits.html" class="list-group-item list-group-item-action bg-light">Credits</a>
+        <a href="contact.html" class="list-group-item list-group-item-action bg-light">Contact</a>
+	  </div>
+	 </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light navbar-light bg-light border-bottom border-danger sticky-top">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="nav-link">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.moddb.com/mods/the-forces-of-darkness">Moddb</a>
+            </li>
+			<li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.buymeacoffee.com/jessedazebra">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid mx-3">
+        <h1 class="mt-4">General Changes</h1>
+				<ul><li>800x600 and 1068x600 resolution support</li>
+					<li>Configurable item display features</li>
+					<li>Added Screenshots folder</li>
+					<li>Disabled non-expansion characters creation</li>
+					<li>Enabled using any symbol on characters creation</li>
+					<li>Removed access to Battle.net</li>
+					<li>HyperJoin - fast loading for multiplayer</li>
+					<li>Expanded size of inventory (10x8), cube (4x4) and stash (10x10)</li>
+					<li>Shrine effects now stack and can't be overriden by curses</li>
+					<li>Removed equipment loss on death penalty</li>
+					<li>Removed mlvl/clvl penalty</li>
+					<li>Removed death gold penalty</li>
+					<li>Removed experience loss on death penalty</li>
+					<li>Removed experience penalty after level 70</li>
+					<li>Experience can be gained beyond two screens</li>
+					<li>Fixed manaburn bug</li>
+					<li>Enabled Linear Magic Find drop rates - no more diminishing returns for drops</li>
+					<li>Deckard Cain now always charge gold for identifying, even if you rescued him</li>
+					<li>Monsters resistance cap reduced from 100% to 95% (no more immunities)</li>
+					<li>Enabled all the missing superunique monsters</li>				
+					<li>Monsters' skill level bonus changed from 0/3/7 to 1/4/7 in Normal/Nightmare/Hell respectively</li>
+					<li>Removed Andariel's and Duriel's death screen shake</li>
+					<li>Secret Cow level can be entered even if Cow King has been killed</li>
+					<li>Nihlathak's Temple portal doesn't disappear even if Nihlathak has been killed</li>
+					<li>Enabled Magic and Physical pierce and skill damage</li>
+					<li>Reduced character's Light Radius</li>
+					<li>Restored Obelisks: they can explode, drop some items or special random gem, or also spawn a boss pack when activated</li></ul>
+					
+        <h1 class="mt-4">Item Changes</h1>
+				<ul><li>Normal vendors sell base items, Nightmare vendors sell exceptional items, and Hell vendors - elite items</li>
+					<li>Fixed a bug when vendors stopped selling normal and superior items past Act 2 Normal</li>
+					<li>Gloves, Boots and Belts now can have sockets (up to 1 in Normal, up to 2 in Nightmare and Hell)</li>
+					<li>Added new <a href="consumables.html">consumable items</a> that are used for cube recipes</li>
+					<li>Added 3 new gem types: Amber, Obsidian and Aquamarine; Skulls changed to Beryl</li>
+					<li>Added 14 new potions: can be obtained via monsters drop only</li>
+					<li>Improved gems quality drop: normal and flawless drop in Nightmare, flawless and perfect drop in Hell</li>
+					<li>Increased high rune drop chance</li>
+					<li>Countess drops up to Thul rune in Normal, up to Um rune in Nightmare, and up to Zod rune in Hell</li>
+					<li>Hellforge drops up to Zod rune in Hell</li>
+					<li>Rare charms can be found</li>
+					<li>Rare jewels and charms can be spawned with 4 affixes max</li>
+					<li>Increased max possible sockets for knife bases</li>
+					<li>Added Melee Deal Splash Damage prefix on jewels and some unique items</li>
+					<li>Chance to cast affixes now have dynamic chance/level range dependent on ilvl</li>
+					<li>Disabled fixed price for rings and amulets on gamble screen</li>
+					<li>Slightly increased chances of getting rare, set or unique item when gambling</li>
+					<li>Slightly reworked classic uniques, sets and runewords; added a lot of new</li>
+					<li>Set items can be spawned as ethereal (sets can be completed with eth and no-eth parts)</li>
+					<li>Removed Low-Quality items completely</li>
+					<li>Enabled Tempered quality items: they are used for making Runewords that can be Corrupted</li></ul>
+					
+        <h1 class="mt-4">Quest Changes</h1>
+		<div class="jumbotron">			
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Act 1</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Sisters' Burial Ground:</p>
+					<ul><li>Added waypoint to Burial Grounds (replaced Jail waypoint)</li>
+						<li>Added 2 sublevels to Crypt and Mausoleum tombs</li>
+						<li>Relocated Blood Raven to one of the tombs</li>
+						<li>Added Horadric Cube chest near Blood Raven</li></ul><br>
+					<p>Search for Cain:</p>
+					<ul><li>Akara gives you Unidentified Ring as a quest reward</li>
+						<li>Deckard Cain now always charge gold for identifying, even if you rescued him</li></ul><br>
+					<p>The Forgotten Tower:</p>
+					<ul><li>Removed Tower Cellar sublevels</li>
+						<li>Countess drops up to Thul rune in Normal, up to Um rune in Nightmare, and up to Zod rune in Hell</li></ul><br>
+					<p>Tools of the Trade:</p>
+					<ul><li>Infinite Imbue: Charsi now charge gold for every imbuing after the quest is completed</li></ul><br>
+					<p>Sisters to the Slaughter:</p>
+					<ul><li>Replaced Catacombs level 2 waypoint with Catacombs level 4 waypoint</li>
+						<li>Now Andariel drops 3 Gem Piles instead of gems</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Act 2</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>The Horadric Staff:</p>
+					<ul><li>Replaced Halls of the Dead Horadric Cube chest with sparkly chest</li>
+						<li>Expanded width of Maggot Lair area</li>
+						<li>Removed Maggot Lair and Claw Viper Temple sublevels</li></ul><br>
+					<p>Arcane Sanctuary:</p>
+					<ul><li>Expanded width of Arcane Sanctuary area, removed teleport pads, added lightning spires, traps etc.</li></ul><br>
+					<p>The Seven Tombs:</p>
+					<ul><li>Ancient Kaa The Soulless now guards the Orifice</li>
+						<li>Added waypoint to Tal Rasha's Chamber (replaced Palace Cellar level 2 waypoint)</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Act 3</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Blade of the Old Religion:</p>
+					<ul><li>Ormus gives you Unidentified Amulet as a quest reward</li></ul><br>
+					<p>Khalim's Will:</p>
+					<ul><li>Removed Flayer Dungeons sublevels</li></ul><br>
+					<p>The Guardian:</p>
+					<ul><li>Replaced Durance of Hate Level 2 waypoint with Durance of Hate Level 3 waypoint</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Act 4</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Hell's Forge:</p>
+					<ul><li>Hellforge drops up to Zod rune in Hell</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Act 5</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Siege on Harrogath:</p>
+					<ul><li>Infinite Socketing: Larzuk now charge gold for every socketing after the quest is completed</li></ul><br>
+					<p>Rescue on Mount Arreat:</p>
+					<ul><li>Qual-Kehk gives you Mystic Rune as a quest reward</li></ul><br>
+					<p>Prison of Ice:</p>
+					<ul><li>Anya gives you a random rare charm as a quest reward</li>
+					<ul><li>Infinite Personalize: Anya now charge gold for every personalizing after the quest is completed</li></ul><br>
+					<p>Betrayal of Harrogath:</p>
+					<ul><li>Nihlathak's Temple portal doesn't disappear even if Nihlathak has been killed</li>
+						<li>Anya can infinitely personalize your items as a quest reward</li>
+						<li>Removed Halls of Pain waypoint</li></ul><br>
+					<p>Eve of Destruction:</p>
+					<ul><li>Replaced The Worldstone Keep Level 2 waypoint with The Worldstone Keep Level 3 waypoint</li>
+						<li>Baal drops new uber quest item on each difficulty</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Subquests and uberquests</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>The Secret Cow Level:</p>
+					<ul><li>Cow King always drops new uber quest item as a quest reward</li>
+						<li>Cow King has a low change of dropping new uber quest item on each difficulty</li></ul><br>
+					<p>Goetia:</p>
+					<ul><li>Added Goetia waypoint (replaced Halls of Pain waypoint)</li>
+						<li>Added 50 dungeons with new bosses on each level</li></ul><br>
+					<p>The Pandemonium Event:</p>
+					<ul><li>Standard of Heroes is a charm now</li></ul><br>
+					<p>Diablo Clone Event:</p>
+					<ul><li>Collect all essenses to get Diablo's Soulstone</li></ul><br>
+					<p>More info here: <a href="subquests.html">Subquests and uberquests</a></p>
+				 </div>
+				 </div>
+				</details>
+		   </div>
+		 </div>
+
+        <h1 class="mt-4">Skill Changes</h1>
+		<div class="jumbotron">			
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Assassin</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Traps:</p>
+					<ul><li><b>Fire Blast</b> - doubled synergy from fire traps</li>
+						<li><b>Blade Sentinel</b> - removed next hit (which allowed sentinel to hit only once a second) and decreased cooldown (with invested hard points)</li>
+						<li><b>Wake of Fire</b> - increased damage and synergy</li>
+						<li><b>Wake of Inferno</b> - increased damage and synergy</li>
+						<li><b>Blade Shield</b> - decreased interval between hits as you invest more hard points</li></ul><br>
+					<p>Shadow Disciplines:</p>
+					<ul><li><b>Psychic Hammer</b> - increased damage and added synergy from Mind Blast</li>
+						<li><b>Burst of Speed</b> - adds FHR synergy to Cloak of Shadows</li>
+						<li><b>Weapon Block</b> - added hidden bonus (+0.5 chance to block for hard point) and adds faster block rate synergy to Cloak of Shadows</li>
+						<li><b>Cloak of Shadows</b> - added new bonuses dependent on points invested into BoS and Weapon Block, duration doesn't increase with more points invested</li>
+						<li><b>Fade</b> - displayed hidden attribute (+1 physical resistance per level)</li>
+						<li><b>Mind Blast</b> - increased radius with hard points, increased damage and damage synergy from Psychic Hammer</li>
+						<li><b>Venom</b> - added synergy from Cobra Strike</li></ul><br>
+					<p>Martial Arts:</p>
+					<ul><li><b>Fists of Fire</b> - increased explosion radius with hard points</li>
+						<li><b>Blades of Ice</b> - increased explosion radius with hard points</li>
+						<li><b>Dragon Flight</b> - decreased cooldown with hard points (with value of 0 at level 20)</li>
+						<li>All charge-up skills: added self synergy (20% AR for hard point)</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Barbarian</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Warcries:</p>
+					<ul><li><b>Find Potion</b> - increased chance for rejuv - 50% rejuv, 25% health, 25% mana, passive effect - mana and life leech 1% per hard point + damage goes to mana 2% per hard point)</li>
+						<li><b>Find Item</b> - +1% chance per hard point (total theoretical cap is now 80%)</li>
+						<li><b>Grim Ward</b> - fleeing enemies are slowed by 75%</li>
+						<li><b>Battle Command</b> - new bonus dex and str +2 per lvl, experience gained + 0.5% per hard point, gold find +10% per hard point, magic find +3% per hard point (and synergies - +0.5% exp gained per hard point in Grim Ward, +20% gold find per hard point in Find Potion, +3% magic find per hard point in Find Item)</li></ul><br>
+					<p>Combat Skills:</p>
+					<ul><li><b>Leap Attack</b> - increased base and synergy dmg bonus</li>
+						<li><b>Stun</b> - doubled stun length and increased AR bonus</li>
+						<li><b>Double Throw</b> - +20% base and 10% dmg per level</li>
+						<li><b>Frenzy</b> - duration length +0.4s per hard point, new synergy from Increased Stamina + 0.8s duration / hard point, new synergy from Increased Speed - increases attack speed by 1% per hard point</li></ul><br>
+					<p>Masteries:</p>
+					<ul><li><b>Increased Stamina</b> - new bonus + life and mana regen per hard point</li>
+						<li><b>Increased Speed</b> - new bonus + 3% FHR per hard point</li>
+						<li><b>Iron Skin</b> - new bonus physical damage reduced by 1 per hard point</li>
+						<li><b>Natural Resistance</b> - new bonus magic damage reduced by 1 per hard point</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Druid</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Summoning:</p>
+					<ul><li><b>Raven</b> - higher damage, hits more times, number of ravens is based on skill level without cap, new synergy from Heart of Wolverine (damage and attack rating - as if it was affected by its aura), new synergy from Spirit Wolf (velocity) and Grizzly (crushing blow)</li>
+						<li><b>Poison Creeper</b> - poison duration gets lower with more points, damage over time remains the same (so the damage is stronger), number of vines increased, new synergy from Rabies</li>
+						<li><b>Summon Spirit Wolf</b> - adds new synergy to all animals - increased velocity</li>
+						<li><b>Carrion Vine</b> - can be summoned up to 3 times at once, has Prayer aura</li>
+						<li><b>Solar Creeper</b> - can be summoned up to 3 times at once, has Meditation aura</li>
+						<li><b>Spirit of Barbs</b> - fixed thorn damage, so that real and displayed thorns damage match (doubled damage)</li>
+						<li><b>Grizzly</b> - adds new synergy to all animals - crushing blow</li>
+						<li>All summons can be summoned at once</li></ul><br>
+					<p>Shapeshifting:</p>
+					<ul><li><b>Werebear</b> - doubled defense bonus</li>
+						<li><b>Feral Rage</b> - increased duration (+2s per hard point)</li>
+						<li><b>Maul</b> - increased duration (+2s per hard point)</li>
+						<li><b>Rabies</b> - poison damage has half its original duration, damage over time preserved (damage over second is doubled)</li>
+						<li><b>Hunger</b> - increased base damage, also increases per hard points, better attack rating</li></ul><br>
+					<p>Elemental:</p>
+					<ul><li><b>Firestorm</b> - Fissure increases number of fire missiles instead of pure fire damage</li>
+						<li><b>Fissure</b> - new synergy from Molten Boulder, increases number of fissures</li>
+						<li><b>Twister</b> - lower next delay</li>
+						<li><b>Tornado</b> - lower next delay</li>
+						<li><b>Volcano</b> - added synergy from Firestorm (fire dmg), changed synergy from Armageddon - leads to larger radius and more fire lumps thrown per second</li>
+						<li><b>Hurricane</b> - new synergy from Arctic Blast which increases radius, duration increases with more points into this skill</li>
+						<li><b>Armageddon</b> - slightly modified synergies, duration increases with more points into this skill</li>
+						<li>All elemental skills - lower delay with more invested points</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Necromancer</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Summoning:</p>
+					<ul><li><b>Summon Skeleton Mage</b> - increased damage per hard point</li>
+						<li><b>Clay Golem</b> - has new synergy - Confuse, which provides him Blessed Aim aura</li>
+						<li><b>Blood Golem</b> - has new synergy - Life Tap, which provides him Prayer aura</li>
+						<li><b>Iron Golem</b> - has new synergy - Iron Maiden, which provides him Thorns aura</li>
+						<li><b>Fire Golem</b> - has new synergy - Dim Vision, which increases his Holy Fire aura level</li>
+						<li><b>Golem Mastery</b> - increases also golem damage</li>
+						<li><b>Summon Resist</b> - increases also physical resistance (2% per hard point) for all summons</li>
+						<li><b>Revive</b> - increased duration (20s per hard point), has new synergy - Terror, which also increases its duration</li>
+						<li>All golems can be summoned at once</li></ul><br>
+					<p>Poison & Bone:</p>
+					<ul><li><b>Teeth</b> - canceled next hit (so you can hit a monster with more than one tooth at once)</li>
+						<li><b>Bone Armor</b> - +10% damage absorbed per hard point</li>
+						<li><b>Poison Dagger</b> - had new synergy - Attract, which decreases its poison duration (but preserves the overall damage)</li>
+						<li><b>Poison Explosion</b> - has new synergy - Attract, which decreases its poison duration (but preserves the overall damage)</li></ul><br>
+					<p>Curses:</p>
+					<ul><li><b>Weaken</b> - decreases monster's damage per hard point</li>
+						<li><b>Decrepify</b> - radius increases with skill level, has new synergies - Amplify Damage, which decreases monster's physical resistance, and Weaken, which decreases monster's damage</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Paladin</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Combat Skills:</p>
+					<ul><li><b>Sacrifice</b> - new synergy from Prayer - increases dmg% and decreases dmg to self</li>
+						<li><b>Holy Bolt</b> - now hits any creature, not only undeads</li>
+						<li><b>Conversion</b> - added AR bonus</li>
+						<li><b>Fists of Heaven</b> - base cooldown decreased from 25 (1 second) to 20 frames (0.8 second), every hard point decreases cooldown by 1 frame (so totally to 0 seconds with 20 hard points - no cooldown!)</li></ul><br>
+					<p>Offensive Auras:</p>
+					<ul><li><b>Holy Fire</b>, <b>Holy Freeze</b>, <b>Holy Shock</b> - new synergy from Salvaton - higher frequency of area effect (in vanilla it applies only once in 2 seconds, now it is possible to make it apply approximately once in 0.6 second)</li>
+						<li><b>Blessed Aim</b> - added deadly strike chance, hit blinds target and open wounds</li>
+						<li><b>Sanctuary</b> - fixed (so that +%dmg and +%ar against undead monsters apply correctly), new synergy from Conversion - higher frequency of area effect</li></ul><br>
+					<p>Defensive Auras:</p>
+					<ul><li><b>Defiance</b> - now provides physical damage reduced by x (passive - physical resistance)</li>
+						<li><b>Prayer</b> - doubled heal bonus + added self synergy for higher heal frequency (doesn't apply to Cleansing and Meditation) (passive - life % bonus)</li>
+						<li><b>Cleansing</b> - (passive - max poison resists)</li>
+						<li><b>Meditation</b> - now also provides damage taken goes to mana (passive - faster hit recovery)</li>
+						<li><b>Redemption</b> - self synergy - higher frequency of area effect (passive - life + mana on kill)</li>
+						<li><b>Salvation</b> - now also provides magic damage reduced by x (passive - fire & cold & lightning absorb %)</li>
+						<li><b>Resist Fire</b> + <b>Resist Cold</b> + <b>Resist Lightning</b> - hidden passive bonus (to max resistances) now visible</li>
+						<li>All defensive auras (excluding Vigor) now work as a passive skill</li></ul>
+				 </div>
+				 </div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Sorceress</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+					<p>Lightning Skills:</p>
+					<ul><li><b>Telekinesis</b> - can pick up any item from ground</li>
+						<li><b>Static Field</b> - works at 50% on all difficulties</li>
+						<li><b>Thunder Storm</b> - added 15% dmg synergy from Static Field, synergy from Teleport (decreases interval between hits)</li></ul><br>
+					<p>Cold Skills:</p>
+					<ul><li><b>Frozen Armor</b> - increased freeze length (1s per lvl). +1 max cold res for each hard point. Increased % def for level (5->10%)</li>
+						<li><b>Shiver Armor</b> - increased dmg, chill length decreased to minimum (2 frames - can be increased by investing into Frozen Armor, up to 25,6s (maximum)). Decreased base defense (45->20%)</li>
+						<li><b>Chilling Armor</b> - the same as Shiver Armor</li>
+						<li>All three armors can be applied at once</li></ul><br>
+					<p>Fire Skills:</p>
+					<ul><li><b>Inferno</b> - increased synergies</li>
+						<li><b>Blaze</b> - removed Fire Wall synergy, increased Warmth synergy. Increased duration (up to 40s), added 1s duration for hard point (so max duration is 60s)</li>
+						<li><b>Fire Wall</b> - increased synergy from Inferno (1%->6%)</li></ul>
+				 </div>
+				 </div>
+				</details>
+		   </div>
+		 </div>
+       </div>
+	 </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div> <!-- /container -->
+
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <script src="accordion.js"></script>
+  <script src="dark-mode-switch.min.js"></script>
+</body>
+
+</html>

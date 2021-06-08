@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The Forces of Darkness - Diablo II Modification</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right border-danger" id="sidebar-wrapper">
+     <div class="sticky-top">
+      <div class="sidebar-heading"><a href="index.html"><b>TFoD</b></a></div>
+      <div class="list-group list-group-flush">
+        <a href="changes.html" class="list-group-item list-group-item-action bg-light">General changes</a>
+        <a href="recipes.html" class="list-group-item list-group-item-action bg-light">Cube recipes</a>
+        <a href="consumables.html" class="list-group-item list-group-item-action bg-light">Consumables</a>
+        <a href="crafting.html" class="list-group-item list-group-item-action bg-light">Crafting recipes</a>
+        <a href="corruptions.html" class="list-group-item active list-group-item-action bg-light">Corruptions</a>
+        <a href="runewords.html" class="list-group-item list-group-item-action bg-light">Runewords</a>
+        <a href="mercs.html" class="list-group-item list-group-item-action bg-light">Mercenaries</a>
+        <a href="areas.html" class="list-group-item list-group-item-action bg-light">Level area changes</a>
+        <a href="subquests.html" class="list-group-item list-group-item-action bg-light">Subquests and uberquests</a>
+        <a href="credits.html" class="list-group-item list-group-item-action bg-light">Credits</a>
+        <a href="contact.html" class="list-group-item list-group-item-action bg-light">Contact</a>
+	  </div>
+	 </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light navbar-light bg-light border-bottom border-danger sticky-top">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="nav-link">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.moddb.com/mods/the-forces-of-darkness">Moddb</a>
+            </li>
+			<li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.buymeacoffee.com/jessedazebra">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid mx-3">
+        <h1 class="mt-4">Corruptions</h1>
+			<p>Demon Shard can be used to corrupt an item, granting it additional modifier, sockets or breaking it into a random rare item.<br>Normal and superior items cannot be corrupted.</p>
+			<p>Corruption system outcome:</p>
+			<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Result</th>
+				  <th scope="col">Socketable Gear</th>
+				  <th scope="col">Unsocketable Gear</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Modifier chance</td>
+				  <td>70%</td>
+				  <td>40%</td>
+				</tr>
+				<tr>
+				  <td>Socket chance</td>
+				  <td>0%</td>
+				  <td>30%</td>
+				</tr>
+				<tr>
+				  <td>Break into a rare chance</td>
+				  <td>30%</td>
+				  <td>30%</td>
+				</tr>
+			  </tbody>
+			</table>
+			</div>
+			<p>Possible number of sockets (depends on the maximum number of sockets of the base item):</p>
+			<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Weapons</th>
+				  <th scope="col">Torsos, Shields, Helmets</th>
+				  <th scope="col">Boots, Gloves, Belts</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>1 - 3</td>
+				  <td>1 - 2</td>
+				  <td>1</td>
+				</tr>
+			  </tbody>
+			</table>
+			</div>
+			<p>Corruption modifiers (from rarest to common):</p>
+			<div class="jumbotron">			
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Weapons</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Fire Skill Damage</li><li>+(10-15)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Cold Skill Damage</li><li>+(10-15)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Lightning Skill Damage</li><li>+(10-15)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Poison Skill Damage</li><li>+(10-15)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Magic Skill Damage</li><li>+(10-15)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(150-300) to Attack Rating</li><li>+(50-100)% Enhanced Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Deadly Strike</li><li>+(50-100)% Enhanced Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Chance of Crushing Blow</li><li>+(50-100)% Enhanced Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Increased Attack Speed</li><li>+(50-100)% Enhanced Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(150-300) to Attack Rating</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Deadly Strike</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Chance of Crushing Blow</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Increased Attack Speed</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-15)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>-(3-5) to Enemy Fire Resistance</li></td>
+				</tr>
+				<tr>
+				  <td><li>-(3-5) to Enemy Cold Resistance</li></td>
+				</tr>
+				<tr>
+				  <td><li>-(3-5) to Enemy Lightning Resistance</li></td>
+				</tr>
+				<tr>
+				  <td><li>-(3-5) to Enemy Poison Resistance</li></td>
+				</tr>
+				<tr>
+				  <td><li>-(3-5) to Enemy Magic Resistance</li></td>
+				</tr>
+				<tr>
+				  <td><li>-(3-5) to Enemy Physical Resistance</li></td>
+				</tr>
+				<tr>
+				  <td><li>Requirements -(20-40)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>(15-30)% Magic Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(50-75)% Enhanced Damage</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Torsos</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(15-30)%</li><li>+(3-5)% to Maximum Fire Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(15-30)%</li><li>+(3-5)% to Maximum Cold Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(15-30)%</li><li>+(3-5)% to Maximum Lightning Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(15-30)%</li><li>+(3-5)% to Maximum Poison Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Indestructible</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>Increase Maximum Life (4-6)%</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Faster Hit Recovery</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>All Resistances +(10-20)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(4-6) to All Attributes</li></td>
+				</tr>
+				<tr>
+				  <td><li>Indestructible</li></td>
+				</tr>
+				<tr>
+				  <td><li>Magic Damage Reduced by (5-10)</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (5-10)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-20)% Faster Run/Walk</li></td>
+				</tr>
+				<tr>
+				  <td><li>Increase Maximum Life (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-15)% Faster Cast Rate%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Light Radius</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Mana (25-35)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Life +(15-30)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(50-75)% Enhanced Defense</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Shields</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(20-40)%</li><li>+(3-5)% to Maximum Fire Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(20-40)%</li><li>+(3-5)% to Maximum Cold Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(20-40)%</li><li>+(3-5)% to Maximum Lightning Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(20-40)%</li><li>+(3-5)% to Maximum Poison Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Indestructible</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>Magic Damage Reduced by (5-10)</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (5-10)</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>All Resistances +(15-30)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(4-6) to All Attributes</li></td>
+				</tr>
+				<tr>
+				  <td><li>Indestructible</li></td>
+				</tr>
+				<tr>
+				  <td><li>Magic Damage Reduced by (5-10)</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (5-10)</li></td>
+				</tr>
+				<tr>
+				  <td><li>(5-10)% Increased Chance of Blocking</li><li>+(10-20)% Faster Block Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>Increase Maximum Life (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-15)% Faster Cast Rate%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Light Radius</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Mana (25-35)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(20-40)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(20-40)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(20-40)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(20-40)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Life +(15-30)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(50-75)% Enhanced Defense</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+				
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Helmets</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(15-30)%</li><li>+(3-5)% to Maximum Fire Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(15-30)%</li><li>+(3-5)% to Maximum Cold Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(15-30)%</li><li>+(3-5)% to Maximum Lightning Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(15-30)%</li><li>+(3-5)% to Maximum Poison Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Indestructible</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>(3-5)% Mana Stolen per Hit</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>(3-5)% Life Stolen per Hit</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>All Resistances +(10-20)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(4-6) to All Attributes</li></td>
+				</tr>
+				<tr>
+				  <td><li>Indestructible</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(150-300) to Attack Rating</li></td>
+				</tr>
+				<tr>
+				  <td><li>Increase Maximum Life (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>(3-5)% Mana Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td><li>(3-5)% Life Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Mana (25-35)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(15-30)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Life +(10-20)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(50-75)% Enhanced Defense</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+				
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Boots</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(10-20)%</li><li>+(2-3)% to Maximum Fire Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(10-20)%</li><li>+(2-3)% to Maximum Cold Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(10-20)%</li><li>+(2-3)% to Maximum Lightning Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(10-20)%</li><li>+(2-3)% to Maximum Poison Resist</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-20)% Faster Run/Walk</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-20)% Faster Hit Recovery</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (3-5)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-20)% Faster Run/Walk</li></td>
+				</tr>
+				<tr>
+				  <td><li>Curse Length Reduced by (10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Life +(10-20)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-20)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td><li>All Resistances +(5-10)</li></td>
+				</tr>
+				<tr>
+				  <td><li>Indestructible</li><li>+(50-100)% Enhanced Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(20-40) to Life</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) to Light Radius</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Mana (20-30)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>(30-60)% Gold Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>(15-30)% Magic Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(50-75)% Enhanced Defense</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+				
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Gloves</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-4) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>Slows Target by 10%</li></td>
+				</tr>
+				<tr>
+				  <td><li>(5-10)% Increased Chance of Blocking</li></td>
+				</tr>
+				<tr>
+				  <td><li>All Resistances +(5-10)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-4) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>-25% Target Defense</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Increased Attack Speed</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(20-40)% Enhanced Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Deadly Strike</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(20-40) to Life</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) to Light Radius</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(4-6) to All Attributes</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-20)% Faster Block Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>(2-3)% Mana Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td><li>(2-3)% Life Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Life +(10-20)</li></td>
+				</tr>
+				<tr>
+				  <td><li>(10-20)% Chance to Pierce</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>(30-60)% Gold Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>(15-30)% Magic Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(50-75)% Enhanced Defense</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Belts</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5)% to Experience Gained</li></td>
+				</tr>
+				<tr>
+				  <td><li>Curse Length Reduced by (10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3)% to All Maximum Resistances</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10)% Faster Block Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>All Resistances +(5-10)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Run/Walk</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Increased Attack Speed</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (3-5)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Mana (15-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) to Light Radius</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(4-6) to All Attributes</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td><li>(30-60)% Gold Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>(15-30)% Magic Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Life +(10-20)</li></td>
+				</tr>
+				<tr>
+				  <td><li>(10-20)% Chance to Pierce</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Vitality</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Energy</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Dexterity</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Strength</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Rings</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>Curse Length Reduced by 10%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Increase Maximum Mana (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Increase Maximum Life (4-6)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Run/Walk</li></td>
+				</tr>
+				<tr>
+				  <td><li>All Resistances +(4-6)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(4-6) to All Attributes</li></td>
+				</tr>
+				<tr>
+				  <td><li>(3-4)% Mana Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td><li>(3-4)% Life Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Light Radius</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>Magic Damage Reduced by (4-6)</li></td>
+				</tr>
+				<tr>
+				  <td><li>Physical Damage Reduced by (4-6)</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(75-125) to Attack Rating</li></td>
+				</tr>
+				<tr>
+				  <td><li>(40-80)% Gold Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>(15-30)% Magic Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Vitality</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Energy</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Dexterity</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Strength</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Amulets</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				<tbody>
+				<tr>
+				  <td><li>+1 to All Skills</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Fire Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Cold Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Lightning Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Poison Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Magic Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+10% Faster Run/Walk</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(20-40)% Enhanced Damage</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3)% to All Maximum Resistances</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(3-5) to Light Radius</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(2-3) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(10-15)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10)% Faster Block Rate</li></td>
+				</tr>
+				<tr>
+				  <td><li>Regenerate Life +(15-25)</li></td>
+				</tr>
+				<tr>
+				  <td><li>(40-80)% Gold Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>(15-30)% Magic Find</li></td>
+				</tr>
+				<tr>
+				  <td><li>Fire Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Cold Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Lightning Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>Poison Resist +(10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Vitality</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Energy</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Dexterity</li></td>
+				</tr>
+				<tr>
+				  <td><li>+(5-10) to Strength</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+		   </div>
+		</div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div> <!-- /container -->
+
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <script src="accordion.js"></script>
+  <script src="dark-mode-switch.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The Forces of Darkness - Diablo II Modification</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right border-danger" id="sidebar-wrapper">
+     <div class="sticky-top">
+      <div class="sidebar-heading"><a href="index.html"><b>TFoD</b></a></div>
+      <div class="list-group list-group-flush">
+        <a href="changes.html" class="list-group-item list-group-item-action bg-light">General changes</a>
+        <a href="recipes.html" class="list-group-item list-group-item-action bg-light">Cube recipes</a>
+        <a href="consumables.html" class="list-group-item list-group-item-action bg-light">Consumables</a>
+        <a href="crafting.html" class="list-group-item list-group-item-action bg-light">Crafting recipes</a>
+        <a href="corruptions.html" class="list-group-item list-group-item-action bg-light">Corruptions</a>
+        <a href="runewords.html" class="list-group-item active list-group-item-action bg-light">Runewords</a>
+        <a href="mercs.html" class="list-group-item list-group-item-action bg-light">Mercenaries</a>
+        <a href="areas.html" class="list-group-item list-group-item-action bg-light">Level area changes</a>
+        <a href="subquests.html" class="list-group-item list-group-item-action bg-light">Subquests and uberquests</a>
+        <a href="credits.html" class="list-group-item list-group-item-action bg-light">Credits</a>
+        <a href="contact.html" class="list-group-item list-group-item-action bg-light">Contact</a>
+	  </div>
+	 </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light navbar-light bg-light border-bottom border-danger sticky-top">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="nav-link">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.moddb.com/mods/the-forces-of-darkness">Moddb</a>
+            </li>
+			<li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.buymeacoffee.com/jessedazebra">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid mx-3">
+        <h1 class="mt-4">Runewords</h1>
+			<p>Items used for Runewords must be Normal, Superior, or Tempered. Ethereal versions can be used as well. You can not use Magic, Rare, Set, Crafted, or Unique items, even if they have the correct number of sockets.</p>
+			<p>Runewords divide weapons into categories that may not be explicitly stated on an item. With weapons especially, it is easy to accidentally mistake one type of weapon for another.</p>
+			<p>Maces:</p>
+				<ul><li>Mace / Flanged Mace / Reinforced Mace</li>
+					<li>Morning Star / Jagged Star / Devil Star</li>
+					<li>Flail / Knout / Scourge</li></ul>			
+			<p>Hammers:</p>
+				<ul><li>War Hammer / Battle Hammer / Legendary Mallet</li>
+					<li>Maul / War Club / Ogre Maul</li>
+					<li>Great Maul / Martel de Fer / Thunder Maul</li></ul>			
+			<p>Clubs:</p>
+				<ul><li>Club / Cudgel / Truncheon</li>
+					<li>Spiked Club / Barbed Club / Tyrant Club</li></ul>
+			<p>Staves and Orbs:</p>
+			<p>Although Orbs are classified as "Staff Class Weapons", when a Runeword calls for a Staff, an Orb cannot be used.</p>
+		<h1 class="mt-4">List of all Runewords by rank:</h1>
+			<p>Weapons:</p>
+			<div class="jumbotron">
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Steel (Swords/Axes/Maces only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • El</th></tr>
+					<tr><th scope="col">Required Level: 13</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+25% Increased Attack Speed</td></tr>
+					<tr><td>+20% Enhanced Damage</td></tr>
+					<tr><td>+3 to Minimum Damage</td></tr>
+					<tr><td>+3 to Maximum Damage</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>50% Chance of Open Wounds</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Malice (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ith • El • Eth</th></tr>
+					<tr><th scope="col">Required Level: 15</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(33-66)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Maximum Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>100% Chance of Open Wounds</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>-100 to Monster Defense per Hit</td></tr>
+					<tr><td>Drain Life -5</td></tr>
+					<tr><td>+(2-3) Life on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Knowledge (Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">El • Ith • Tir</th></tr>
+					<tr><th scope="col">Required Level: 15</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>10% Increased Attack Speed</td></tr>
+					<tr><td>+(50-75)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Maximum Damage</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>+25 to Mana</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>+2 Life on Kill</td></tr>
+					<tr><td>+(2-3)% to Experience Gained</td></tr>
+					<tr><td>(20-30)% Gold Find</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Sting (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Nef • Tal • Eth</th></tr>
+					<tr><th scope="col">Required Level: 17</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+15% Increased Attack Speed</td></tr>
+					<tr><td>+(25-40) to Maximum Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>(5-8)% Mana Stolen per Hit</td></tr>
+					<tr><td>+(3-5) to Multiple Shot</td></tr>
+					<tr><td>Knockback</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Jealosy (Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tal • Eld</th></tr>
+					<tr><th scope="col">Required Level: 17</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(60-80)% Enhanced Damage</td></tr>
+					<tr><td>+75% Damage to Undead</td></tr>
+					<tr><td>+50 to AR against Undead</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>(3-5)% Mana Stolen per Hit</td></tr>
+					<tr><td>(3-5)% Life Stolen per Hit</td></tr>
+					<tr><td>+3 to Spear Mastery</td></tr>
+					<tr><td>+3 to Jab</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Leaf (Staves only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • Ral</th></tr>
+					<tr><th scope="col">Required Level: 19</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to Fire Skills</td></tr>
+					<tr><td>Adds 5-30 Fire Damage</td></tr>
+					<tr><td>+3 to Inferno (Sorceress Only)</td></tr>
+					<tr><td>+3 to Warmth (Sorceress Only)</td></tr>
+					<tr><td>+3 to Fire Bolt (Sorceress Only)</td></tr>
+					<tr><td>+2 to Defense (Based on CLvl)</td></tr>
+					<tr><td>Cold Resist +33%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Zephyr (Missiles Only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ort • Eth</th></tr>
+					<tr><th scope="col">Required Level: 21</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 5 Twister when Struck</td></tr>
+					<tr><td>+25% Faster Run/Walk</td></tr>
+					<tr><td>+25% Increased Attack Speed</td></tr>
+					<tr><td>+(33-66)% Enhanced Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>+66 Attack Rating</td></tr>
+					<tr><td>Adds 1-50 Lightning Damage</td></tr>
+					<tr><td>+25 Defense</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Holy Thunder (Scepters only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Eth • Ral • Ort • Tal</th></tr>
+					<tr><th scope="col">Required Level: 21</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+60% Enhanced Damage</td></tr>
+					<tr><td>+10 to Maximum Damage</td></tr>
+					<tr><td>-25% Target Damage</td></tr>
+					<tr><td>Adds 5-30 Fire Damage</td></tr>
+					<tr><td>Adds 21-110 Lightning Damage</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>+3 to Holy Shock (Paladin Only)</td></tr>
+					<tr><td>+5% to Maximum Lightning Resist</td></tr>
+					<tr><td>Lightning Resist +60%</td></tr>
+					<tr><td>Level 7 Chain Lightning (60 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Temptation (Maces only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ort • Nef • El</th></tr>
+					<tr><th scope="col">Required Level: 21</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(150-200) Enhanced Damage</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>Adds 1-50 Lightning Damage</td></tr>
+					<tr><td>-(4-7)% to Enemy Physical Resistance</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Obsession (Clubs only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Thul • El</th></tr>
+					<tr><th scope="col">Required Level: 23</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Adds 15-20 Damage</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>(4-6)% Life Stolen per Hit</td></tr>
+					<tr><td>Freezes Target +2</td></tr>
+					<tr><td>Lightning Resist +15%</td></tr>
+					<tr><td>(30-50)% Gold Find</td></tr>
+					<tr><td>(20-25)% Magic Find</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Strength (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Tir</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(65-95)% Enhanced Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>25% Chance of Crushing Blow</td></tr>
+					<tr><td>+20 to Strength</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">King's Grace (Scepters/Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Ral • Thul</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+100% Enhanced Damage</td></tr>
+					<tr><td>+150 to Attack Rating</td></tr>
+					<tr><td>+100% Damage to Demons</td></tr>
+					<tr><td>+100 to AR against Demons</td></tr>
+					<tr><td>+50% Damage to Undead</td></tr>
+					<tr><td>+100 to AR against Undead</td></tr>
+					<tr><td>Adds 5-30 Fire Damage</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Edge (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • Tal • Amn</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level 15 Thorns Aura when Equipped</td></tr>
+					<tr><td>+35% Increased Attack Speed</td></tr>
+					<tr><td>+(320-380)% Damage to Demons</td></tr>
+					<tr><td>+280% Damage to Undead</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+(5-10) to All Attributes</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>Reduced All Vendor Prices 15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Spirit (Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tal • Thul • Ort • Amn</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(25-35)% Faster Cast Rate</td></tr>
+					<tr><td>+(25-35)% Faster Hit Recovery</td></tr>
+					<tr><td>Adds 1-50 Lightning Damage</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>+(11-22) to Vitality</td></tr>
+					<tr><td>+(59-82) to Mana</td></tr>
+					<tr><td>+(5-10) Magic Absorb</td></tr>
+					<tr><td>Requirements -25%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Friendship</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Amn</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>5% Increased Chance of Blocking</td></tr>
+					<tr><td>+(60-110)% Enhanced Damage</td></tr>
+					<tr><td>Adds 15-30 Damage</td></tr>
+					<tr><td>+(50-75) to Attack Rating</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>50% Chance of Crushing Blow</td></tr>
+					<tr><td>50% Deadly Strike</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Lightning</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ort • Ort • Amn</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>15% Ctc Level 9 Lightning on Striking</td></tr>
+					<tr><td>Level (1-3) Holy Shock Aura when Equipped</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(90-135)% Enhanced Damage</td></tr>
+					<tr><td>Adds 2-100 Lightning Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>Lightning Resist +(20-30)%</td></tr>
+					<tr><td>+(4-6) Lightning Absorb</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Honor (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • El • Ith • Tir • Sol</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+160 Enhanced Damage</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>+9 to Maximum Damage</td></tr>
+					<tr><td>+250 to Attack Rating</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>25% Deadly Strike</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>Regenerate Life +10</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Insight (Polearms/Staves/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ral • Tir • Tal • Sol</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (12-17) Meditation Aura when Equipped</td></tr>
+					<tr><td>+35% Faster Cast Rate</td></tr>
+					<tr><td>+(200-260)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>(180-250)% Bonus to Attack Rating</td></tr>
+					<tr><td>Adds 5-30 Fire Damage</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>+(1-6) to Critical Strike</td></tr>
+					<tr><td>+5 to All Attributes</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>23% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Shadow of Doubt (Wands only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">El • Sol</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to Magic Skills</td></tr>
+					<tr><td>+(1-2) to Poison and Bone Skills (Necromancer Only)</td></tr>
+					<tr><td>+10% Faster Cast Rate</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>+(4-7) to Magic Skill Damage</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Thirst (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sol • Thul • Ral</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(125-150)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>+1.5 to Maximum Damage (Based on CLvl)</td></tr>
+					<tr><td>Adds 5-30 Fire Damage</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>+(0.125-0.375) to Vitality (Based on CLvl)</td></tr>
+					<tr><td>+(2-4) Mana on Kill</td></tr>
+					<tr><td>+(2-4) Life on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Sorrow (Hammers only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • Dol</th></tr>
+					<tr><th scope="col">Required Level: 29</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+40% Increased Attack Speed</td></tr>
+					<tr><td>+(160-200)% Enhanced Damage</td></tr>
+					<tr><td>6% Mana Stolen per Hit</td></tr>
+					<tr><td>Drain Life -2</td></tr>
+					<tr><td>Regenerate Mana 50%</td></tr>
+					<tr><td>+(6-9) Life on Kill</td></tr>
+					<tr><td>Level 20 Clay Golem (5 Charges)</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Black (Clubs/Hammers/Maces only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Thul • Io • Nef</th></tr>
+					<tr><th scope="col">Required Level: 35</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+15% Increased Attack Speed</td></tr>
+					<tr><td>+120% Enhanced Damage</td></tr>
+					<tr><td>+200 to Attack Rating</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>40% Chance of Crushing Blow</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>Magic Damage Reduced by 2</td></tr>
+					<tr><td>Level 4 Corpse Explosion (12 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">White (Wands only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • Io</th></tr>
+					<tr><th scope="col">Required Level: 35</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to Poison and Bone Skills (Necromancer Only)</td></tr>
+					<tr><td>+20% Faster Cast Rate</td></tr>
+					<tr><td>-(4-6)% to Enemy Magic Resistance</td></tr>
+					<tr><td>+(4-6)% to Magic Skill Damage</td></tr>
+					<tr><td>+(1-3) to Bone Armor (Necromancer Only)</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+13 to Mana</td></tr>
+					<tr><td>Magic Damage Reduced by 4</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Hatred</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Thul</th></tr>
+					<tr><th scope="col">Required Level: 35</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(140-190)% Enhanced Damage</td></tr>
+					<tr><td>+(50-100)% Damage to Demons</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>50% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Holy Tears (Scepters only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Tir • Shael</th></tr>
+					<tr><th scope="col">Required Level: 35</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 15 Fist of the Heavens on Striking</td></tr>
+					<tr><td>+50% Increased Attack Speed</td></tr>
+					<tr><td>+(160-200)% Enhanced Damage</td></tr>
+					<tr><td>35% Bonus to Attack Rating</td></tr>
+					<tr><td>+(150-225)% Damage to Demons</td></tr>
+					<tr><td>Slows Target by 35%</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Red (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Ral • Ral • Hel</th></tr>
+					<tr><th scope="col">Required Level: 35</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 11 Meteor on Striking</td></tr>
+					<tr><td>+(125-175)% Enhanced Damage</td></tr>
+					<tr><td>Adds 10-60 Fire Damage</td></tr>
+					<tr><td>+(10-15)% to Fire Skill Damage</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>Cold Resist -20%</td></tr>
+					<tr><td>Fire Resist +(35-50)%</td></tr>
+					<tr><td>Fire Absorb 10%</td></tr>
+					<tr><td>Repairs 1 Durability in 5 seconds</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Memory (Staves only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lum • Io • Sol • Eth</th></tr>
+					<tr><th scope="col">Required Level: 37</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+3 to Sorceress Skills</td></tr>
+					<tr><td>+(30-50)% Faster Cast Rate</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>+3 to Energy Shield (Sorceress Only)</td></tr>
+					<tr><td>+2 to Static Field (Sorceress Only)</td></tr>
+					<tr><td>+50% Enhanced Defense</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>Increase Maximum Mana 20%</td></tr>
+					<tr><td>Magic Damage Reduced by 7</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Deception (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Dol • Lum</th></tr>
+					<tr><th scope="col">Required Level: 37</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>5% Ctc Level 13 Meteor on Striking</td></tr>
+					<tr><td>+40% Faster Hit Recovery</td></tr>
+					<tr><td>+(165-205)% Enhanced Damage</td></tr>
+					<tr><td>+1 to Maximum Damage (Based on CLvl)</td></tr>
+					<tr><td>+(8-12)% to Fire Skill Damage</td></tr>
+					<tr><td>(6-8)% Life Stolen per Hit</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>15% Reanimate As: Warped One</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Melody (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Ko • Nef</th></tr>
+					<tr><th scope="col">Required Level: 39</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+3 to Bow And Crossbow Skills (Amazon Only)</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+50% Enhanced Damage</td></tr>
+					<tr><td>+300% Damage to Undead</td></tr>
+					<tr><td>+3 to Slow Missiles (Amazon Only)</td></tr>
+					<tr><td>+3 to Dodge (Amazon Only)</td></tr>
+					<tr><td>+3 to Critical Strike (Amazon Only)</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Harmony (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • Ith • Sol • Ko</th></tr>
+					<tr><th scope="col">Required Level: 39</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level 10 Vigor Aura when Equipped</td></tr>
+					<tr><td>+(200-275)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>+9 to Maximum Damage</td></tr>
+					<tr><td>Adds 55-160 Fire Damage</td></tr>
+					<tr><td>Adds 55-160 Lightning Damage</td></tr>
+					<tr><td>Adds 55-160 Cold Damage</td></tr>
+					<tr><td>+(2-6) to Valkyrie</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>Regenerate Mana 20%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>+2 to Light Radius</td></tr>
+					<tr><td>Level 20 Revive (25 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Pestilence (Axes only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sol • Ko • Io</th></tr>
+					<tr><th scope="col">Required Level: 39</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 13 Poison Explosion on Striking</td></tr>
+					<tr><td>+(185-215)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>+313 Poison Damage over 4 seconds</td></tr>
+					<tr><td>+(10-20)% to Poison Skill Damage</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>Poison Length Reduced by 50%</td></tr>
+					<tr><td>(20-35)% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Water (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ko • Shael • Hel</th></tr>
+					<tr><th scope="col">Required Level: 39</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+25% Faster Hit Recovery</td></tr>
+					<tr><td>+175% Enhanced Damage</td></tr>
+					<tr><td>Adds 33-122 Cold Damage</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>Regenerate Life +(15-20)</td></tr>
+					<tr><td>Regenerate Mana 35%</td></tr>
+					<tr><td>Fire Resist +50%</td></tr>
+					<tr><td>Level 7 Battle Orders (30 Charges)</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Obedience (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Ko • Thul • Eth • Fal</th></tr>
+					<tr><th scope="col">Required Level: 41</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>30% Ctc Level 21 Enchant when You kill An Enemy</td></tr>
+					<tr><td>+40% Faster Hit Recovery</td></tr>
+					<tr><td>+370% Enhanced Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>-25% to Enemy Fire Resistance</td></tr>
+					<tr><td>40% Chance of Crushing Blow</td></tr>
+					<tr><td>+(200-300) Defense</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>All Resistances +(20-30)</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Envy</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Fal • Ko • Lum • Io</th></tr>
+					<tr><th scope="col">Required Level: 41</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+30% Increased Attack Speed</td></tr>
+					<tr><td>+(200-225)% Enhanced Damage</td></tr>
+					<tr><td>(4-6)% Mana Stolen per Hit</td></tr>
+					<tr><td>-10% to Enemy Physical Resistance</td></tr>
+					<tr><td>(4-6)% Life Stolen per Hit</td></tr>
+					<tr><td>+10 to All Attributes</td></tr>
+					<tr><td>All Resistances +25</td></tr>
+					<tr><td>35% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Passion (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • Ort • Eld • Lem</th></tr>
+					<tr><th scope="col">Required Level: 43</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+25% Increased Attack Speed</td></tr>
+					<tr><td>+(160-210)% Enhanced Damage</td></tr>
+					<tr><td>(50-80)% Bonus to Attack Rating</td></tr>
+					<tr><td>+75% Damage to Undead</td></tr>
+					<tr><td>+50 to AR against Undead</td></tr>
+					<tr><td>Adds 1-50 Lightning Damage</td></tr>
+					<tr><td>+1 to Berserk</td></tr>
+					<tr><td>+1 to Zeal</td></tr>
+					<tr><td>Hit Blinds Target +10</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+					<tr><td>Level 8 Heart of Wolverine (36 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Lawbringer (Hammers/Scepters/Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Lem • Ko</th></tr>
+					<tr><th scope="col">Required Level: 43</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>20% Ctc Level 15 Decrepify on Striking</td></tr>
+					<tr><td>Level (16-18) Sanctuary Aura when Equipped</td></tr>
+					<tr><td>-50% Target Defense</td></tr>
+					<tr><td>Adds 150-210 Fire Damage</td></tr>
+					<tr><td>Adds 130-180 Cold Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>Slain Monsters Rest in Peace</td></tr>
+					<tr><td>+(200-250) Defense vs. Missile</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Voice of Reason (Swords/Maces only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lem • Ko • El • Eld</th></tr>
+					<tr><th scope="col">Required Level: 43</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>15% Ctc Level 16 Frozen Orb on Striking</td></tr>
+					<tr><td>18% Ctc Level 20 Ice Blast on Striking</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>+(220-350)% Damage to Demons</td></tr>
+					<tr><td>+(355-375)% Damage to Undead</td></tr>
+					<tr><td>+50 to AR against Undead</td></tr>
+					<tr><td>Adds 200-320 Cold Damage</td></tr>
+					<tr><td>-24 to Enemy Cold Resistance</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Shadow (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Pul • Sol • Shael • Sol</th></tr>
+					<tr><th scope="col">Required Level: 45</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>25% Ctc Level 12 Cloak of Shadows when Struck</td></tr>
+					<tr><td>+50% Faster Run/Walk</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(175-225)% Enhanced Damage</td></tr>
+					<tr><td>+18 to Minimum Damage</td></tr>
+					<tr><td>+75% Damage to Demons</td></tr>
+					<tr><td>+100 to AR against Demons</td></tr>
+					<tr><td>Adds 54-176 Cold Damage</td></tr>
+					<tr><td>Level 10 Bone Wall (50 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Thunder (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Pul • Lem • Ko • Fal</th></tr>
+					<tr><th scope="col">Required Level: 45</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>10% Ctc Level 23 Thunder Storm when Struck</td></tr>
+					<tr><td>+235% Enhanced Damage</td></tr>
+					<tr><td>+75% Damage to Demons</td></tr>
+					<tr><td>+100 to AR against Demons</td></tr>
+					<tr><td>Adds 1-444 Lightning Damage</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>+25% Increased Energy</td></tr>
+					<tr><td>Lightning Resist +60%</td></tr>
+					<tr><td>+(4-6) Lightning Absorb</td></tr>
+					<tr><td>Attacker Takes Lightning Damage of 777</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Crescent Moon (Axes/Swords/Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Um • Tir</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>10% Ctc Level 27 Lightning on Striking</td></tr>
+					<tr><td>7% Ctc Level 13 Static Field on Striking</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(180-220)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>-35% to Enemy Lightning Resistance</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>+(9-11) Magic Absorb</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>Level 18 Summon Spirit Wolf (30 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Pillar of Faith (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Fal • Fal • Um • Amn</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (8-12) Cleansing Aura when Equipped</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+230% Enhanced Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>+(400-500) Defense</td></tr>
+					<tr><td>+20 to Strength</td></tr>
+					<tr><td>+75 to Life</td></tr>
+					<tr><td>Fire Absorb 15%</td></tr>
+					<tr><td>Attacker Takes Fire Damage of 420</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Venom (Knives only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tal • Dol • Mal</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>20% Ctc Level 23 Poison Nova when You Kill An Enemy</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>-(10-30)% to Enemy Poison Resistance</td></tr>
+					<tr><td>+(2-3) to Poison Dagger</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>Level 15 Poison Explosion (27 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Oath (Swords/Axes/Maces only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Pul • Mal • Lum</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>30% Ctc Level 20 Bone Spirit on Striking</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+50% Increased Attack Speed</td></tr>
+					<tr><td>+(210-340)% Enhanced Damage</td></tr>
+					<tr><td>+75% Damage to Demons</td></tr>
+					<tr><td>+100 to AR against Demons</td></tr>
+					<tr><td>+8 to Heart of Wolverine</td></tr>
+					<tr><td>+6 to Iron Golem</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>+(10-15) Magic Absorb</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Lust (Wands only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Mal</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level 8 Salvation Aura when Equipped</td></tr>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+25% Faster Run/Walk</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Increased Maximum Mana 35%</td></tr>
+					<tr><td>All Resistances +(35-50)</td></tr>
+					<tr><td>(50-75)% Gold Find</td></tr>
+					<tr><td>(35-50)% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Kingslayer (Swords/Axes only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Mal • Um • Gul • Fal</th></tr>
+					<tr><th scope="col">Required Level: 53</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+30% Increased Attack Speed</td></tr>
+					<tr><td>+(230-270)% Enhanced Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>33% Chance of Crushing Blow</td></tr>
+					<tr><td>50% Chance of Open Wounds</td></tr>
+					<tr><td>+3 to Vengeance</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>40% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Rift</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Ko • Lem • Gul</th></tr>
+					<tr><th scope="col">Required Level: 53</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>20% Ctc Level 21 Tornado on Striking</td></tr>
+					<tr><td>16% Ctc Level 21 Frozen Orb on Attack</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>Adds 160-250 Magic Damage</td></tr>
+					<tr><td>Adds 60-180 Fire Damage</td></tr>
+					<tr><td>+(15-20) to Strength</td></tr>
+					<tr><td>+(25-30) to Dexterity</td></tr>
+					<tr><td>+(15-20) to Vitality</td></tr>
+					<tr><td>+(15-20) to Energy</td></tr>
+					<tr><td>38% Damage Taken Goes to Mana</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+					<tr><td>Level 15 Iron Maiden (40 Charges)</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Despair (Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Gul • Mal • Shael • Shael • El</th></tr>
+					<tr><th scope="col">Required Level: 53</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>12% Ctc Level 16 Weaken on Striking</td></tr>
+					<tr><td>+40% Increased Attack Speed</td></tr>
+					<tr><td>+(260-300) Enhanced Damage</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>(7-9)% Mana Stolen per Hit</td></tr>
+					<tr><td>+7 to Fend</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Slows Target by 35%</td></tr>
+					<tr><td>35% Magic Find</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Silence</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • Eld • Hel • Ist • Tir • Vex</th></tr>
+					<tr><th scope="col">Required Level: 55</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+200% Enhanced Damage</td></tr>
+					<tr><td>+75% Damage to Undead</td></tr>
+					<tr><td>+50 to AR against Undead</td></tr>
+					<tr><td>11% Mana Stolen per Hit</td></tr>
+					<tr><td>Hit Blinds Target +33</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>All Resistances +75</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Heart of the Oak (Staves/Maces only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ko • Vex • Pul • Thul</th></tr>
+					<tr><th scope="col">Required Level: 55</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+3 to All Skills</td></tr>
+					<tr><td>+(30-40)% Faster Cast Rate</td></tr>
+					<tr><td>+75% Damage to Demons</td></tr>
+					<tr><td>+100 to AR against Demons</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>Regenerate Life +20</td></tr>
+					<tr><td>Increase Maximum Mana 15%</td></tr>
+					<tr><td>All Resistances +(20-30)</td></tr>
+					<tr><td>Level 14 Raven (60 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Death (Swords/Axes only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • El • Vex • Ort • Gul</th></tr>
+					<tr><th scope="col">Required Level: 55</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>100% Ctc Level 44 Chain Lightning when You Die</td></tr>
+					<tr><td>25% Ctc Level 18 Glacial Spike on Attack</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+(300-355)% Enhanced Damage</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>Adds 1-50 Lightning Damage</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>50% Chance of Crushing Blow</td></tr>
+					<tr><td>0.5% Deadly Strike (Based on CLvl)</td></tr>
+					<tr><td>+12 to Blood Golem</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Innocence (Hammers only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Lem • Ist</th></tr>
+					<tr><th scope="col">Required Level: 55</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+(190-240)% Enhanced Damage</td></tr>
+					<tr><td>+2 to Maximum Damage (Based on CLvl)</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>+(15-25) to All Attributes</td></tr>
+					<tr><td>Increase Maximum Life (15-25)%</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+					<tr><td>Repairs 1 Durability in 7 seconds</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Wonder (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Amn • Shael • Amn • Vex</th></tr>
+					<tr><th scope="col">Required Level: 55</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+20 Increased Attack Speed</td></tr>
+					<tr><td>+30% Faster Hit Recovery</td></tr>
+					<tr><td>+275% Enhanced Damage</td></tr>
+					<tr><td>14% Mana Stolen per Hit</td></tr>
+					<tr><td>14% Life Stolen per Hit</td></tr>
+					<tr><td>+20 to Strength</td></tr>
+					<tr><td>+20 to Dexterity</td></tr>
+					<tr><td>+1.5 to Life (Based on CLvl)</td></tr>
+					<tr><td>3% Gold Find (Based on CLvl)</td></tr>
+					<tr><td>2% Magic Find (Based on CLvl)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Call to Arms</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Ral • Mal • Ist • Ohm</th></tr>
+					<tr><th scope="col">Required Level: 57</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+40% Increased Attack Speed</td></tr>
+					<tr><td>+(250-290)% Enhanced Damage</td></tr>
+					<tr><td>Adds 5-30 Fire Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>+(2-6) to Battle Command</td></tr>
+					<tr><td>+(1-6) to Battle Orders</td></tr>
+					<tr><td>+(1-4) to Battle Cry</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Regenerate Life +12</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Madness (Clubs only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ohm • Hel • Um</th></tr>
+					<tr><th scope="col">Required Level: 57</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>33% Ctc Level 15 Fissure when Struck</td></tr>
+					<tr><td>Level 7 Defiance Aura when Equipped</td></tr>
+					<tr><td>15% Increased Chance of Blocking</td></tr>
+					<tr><td>+(300-350)% Enhanced Damage</td></tr>
+					<tr><td>+1 to Maximum Damage (Based on CLvl)</td></tr>
+					<tr><td>(30-50)% Chance of Crushing Blow</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>+15 to Strength</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Praise (Hammers only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Fal • Gul • Ohm • Shael</th></tr>
+					<tr><th scope="col">Required Level: 57</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>25% Ctc Level 10 Glacial Spike when Struck</td></tr>
+					<tr><td>7% Ctc Level 47 Frozen Orb on Striking</td></tr>
+					<tr><td>+2 to Cold Skills</td></tr>
+					<tr><td>+20 Increased Attack Speed</td></tr>
+					<tr><td>+(330-400)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>-(8-12)% to Enemy Cold Resistance</td></tr>
+					<tr><td>(8-12)% Life Stolen per Hit</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Victory (Axes/Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ohm • Ohm • Ist • Lem</th></tr>
+					<tr><th scope="col">Required Level: 57</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (7-9) Might Aura when Equipped</td></tr>
+					<tr><td>+60% Increased Attack Speed</td></tr>
+					<tr><td>+(1.75-2.25) to Maximum Damage (Based on CLvl)</td></tr>
+					<tr><td>Adds 1-300 Fire Damage</td></tr>
+					<tr><td>Adds 1-300 Lightning Damage</td></tr>
+					<tr><td>Adds 1-300 Cold Damage</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+					<tr><td>Repairs 1 Durability in 10 seconds</td></tr>
+					<tr><td>Requirements -50%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Fortitude</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">El • Sol • Dol • Lo</th></tr>
+					<tr><th scope="col">Required Level: 59</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 5 Chilling Armor when Struck</td></tr>
+					<tr><td>+(20-25)% Faster Cast Rate</td></tr>
+					<tr><td>+(175-225)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>+(175-225)% Enhanced Defense</td></tr>
+					<tr><td>+(1-1.5) to Life (Based on CLvl)</td></tr>
+					<tr><td>All Resistances +(25-30)</td></tr>
+					<tr><td>12% Damage Taken Goes to Mana</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Grief (Swords/Axes only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Eth • Tir • Lo • Mal • Ral</th></tr>
+					<tr><th scope="col">Required Level: 59</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>35% Ctc Level 15 Venom on Striking</td></tr>
+					<tr><td>+(30-40)% Increased Attack Speed</td></tr>
+					<tr><td>Adds (240-260 to 280-300) Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>+1.875% Damage to Demons (Based on CLvl)</td></tr>
+					<tr><td>Adds 5-30 Fire Damage</td></tr>
+					<tr><td>-(20-25)% to Enemy Poison Resistance</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>+(10-15) Life on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Wind (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sur • Sur • El</th></tr>
+					<tr><th scope="col">Required Level: 61</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>18% Ctc Level 29 Tornado on Striking</td></tr>
+					<tr><td>18% Ctc Level 25 Twister on Striking</td></tr>
+					<tr><td>5% Ctc Level 9 Cyclone Armor on Striking</td></tr>
+					<tr><td>+(20-30)% Faster Run/Walk</td></tr>
+					<tr><td>+40% Increased Attack Speed</td></tr>
+					<tr><td>+(160-240)% Enhanced Damage</td></tr>
+					<tr><td>-50% Target Defense</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>Hit Blinds Target +2</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Beast (Axes/Scepters/Hammers only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ber • Tir • Um • Mal • Lum</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (8-10) Fanaticism Aura when Equipped</td></tr>
+					<tr><td>+40% Increased Attack Speed</td></tr>
+					<tr><td>+(260-290) Enhanced Damage</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>+3 to Hunger</td></tr>
+					<tr><td>+3 to Maul</td></tr>
+					<tr><td>+3 to Werebear</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>Level 13 Summon Grizzly (35 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Eternity (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Ber • Ist • Sol • Sur</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+(260-310)% Enhanced Damage</td></tr>
+					<tr><td>Adds 64-71 Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+					<tr><td>+3 to Revive</td></tr>
+					<tr><td>Hit Blinds Target</td></tr>
+					<tr><td>Regenerate Life +16</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+					<tr><td>10% Reanimate As: Wraith</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Infinity (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ber • Mal • Ber • Ist</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>50% Ctc Level 20 Lightning when You Kill An Enemy</td></tr>
+					<tr><td>Level 12 Conviction Aura when Equipped</td></tr>
+					<tr><td>+35% Faster Run/Walk</td></tr>
+					<tr><td>+(255-325)% Enhanced Damage</td></tr>
+					<tr><td>-(45-55)% to Enemy Lightning Resistance</td></tr>
+					<tr><td>40% Chance of Crushing Blow</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>0.5 to Vitality (Based on CLvl)</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+					<tr><td>Level 21 Cyclone Armor (30 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Wrath (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Pul • Lum • Ber • Mal</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>30% Ctc Level 18 Decrepify on Striking</td></tr>
+					<tr><td>+(30-45)% Increased Attack Speed</td></tr>
+					<tr><td>+375% Damage to Demons</td></tr>
+					<tr><td>+(250-300)% Damage to Undead</td></tr>
+					<tr><td>Adds 85-120 Magic Damage</td></tr>
+					<tr><td>Adds 41-240 Lightning Damage</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Unbending Will (Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ber • Lum • Ist • Ist • Tir • Amn</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>12% Ctc Level 43 Teeth on Striking</td></tr>
+					<tr><td>50% Ctc Level 17 Nova on Striking</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+60% Faster Hit Recovery</td></tr>
+					<tr><td>+(280-320) Enhanced Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>+5 Mana on Kill</td></tr>
+					<tr><td>60% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Fury (Melee only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Gul • Eth</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+40% Increased Attack Speed</td></tr>
+					<tr><td>+(209-269)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>6% Life Stolen per Hit</td></tr>
+					<tr><td>(33-66)% Deadly Strike</td></tr>
+					<tr><td>(33-66)% Chance of Open Wounds</td></tr>
+					<tr><td>+5 to Frenzy (Barbarian Only)</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Famine (Axes/Hammers/Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Fal • Ohm • Ort • Jah</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+30% Increased Attack Speed</td></tr>
+					<tr><td>+(320-370)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>Adds 150-300 Fire Damage</td></tr>
+					<tr><td>Adds 64-350 Lightning Damage</td></tr>
+					<tr><td>Adds 150-300 Cold Damage</td></tr>
+					<tr><td>-(10-20)% to Enemy Fire Resistance</td></tr>
+					<tr><td>-(10-20)% to Enemy Cold Resistance</td></tr>
+					<tr><td>-(10-20)% to Enemy Lightning Resistance</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Brand (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Lo • Mal • Gul</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>35% Ctc Level 14 Amplify Damage when Struck</td></tr>
+					<tr><td>50% Ctc Level 35 Bone Spear on Striking</td></tr>
+					<tr><td>Fires Explosive Arrows or Bolts</td></tr>
+					<tr><td>+(260-340)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>+(280-330)% Damage to Demons</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Knockback</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Destruction (Polearms/Swords/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Lo • Ber • Jah • Ko</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>5% Ctc Level 19 Armageddon when Struck</td></tr>
+					<tr><td>5% Ctc Level 33 Molten Boulder on Striking</td></tr>
+					<tr><td>5% Ctc Level 45 Meteor on Striking</td></tr>
+					<tr><td>23% Ctc Level 22 Frost Nova on Striking</td></tr>
+					<tr><td>15% Ctc Level 32 Nova on Attack</td></tr>
+					<tr><td>+(30-40)% Increased Attack Speed</td></tr>
+					<tr><td>+300% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Faith (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ohm • Jah • Lem • Eld</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (12-15) Fanaticism Aura when Equipped</td></tr>
+					<tr><td>+(280-330)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>300% Bonus to Attack Rating</td></tr>
+					<tr><td>+75% Damage to Undead</td></tr>
+					<tr><td>+50 to AR against Undead</td></tr>
+					<tr><td>+120 Fire Damage</td></tr>
+					<tr><td>All Resistances +15</td></tr>
+					<tr><td>10% Reanimate As: Returned</td></tr>
+					<tr><td>Curse Length Reduced by (20-30)%</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Ice (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Shael • Jah • Lo</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>15% Ctc Level 25 Blizzard when Struck</td></tr>
+					<tr><td>20% Ctc Level 32 Frost Nova on Striking</td></tr>
+					<tr><td>Level 18 Holy Freeze Aura when Equipped</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(140-210)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>+(25-30)% to Cold Skill Damage</td></tr>
+					<tr><td>-20% to Enemy Cold Resistance</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>3.125% Gold Find (Based on CLvl)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Last Wish (Axes/Hammers/Swords only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Mal • Jah • Sur • Jah • Ber</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>6% Ctc Level 11 Fade when Struck</td></tr>
+					<tr><td>10% Ctc Level 18 Life Tap on Striking</td></tr>
+					<tr><td>20% Ctc Level 20 Charged Bolt on Attack</td></tr>
+					<tr><td>Level 17 Might Aura when Equipped</td></tr>
+					<tr><td>+(330-375)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>(60-70)% Chance of Crushing Blow</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Hit Blinds Target</td></tr>
+					<tr><td>0.5% Magic Find (Based on CLvl)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Phoenix</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Vex • Lo • Jah</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>100% Ctc Level 40 Blaze when You Level-Up</td></tr>
+					<tr><td>10% Ctc Level 22 Fire Ball on Striking</td></tr>
+					<tr><td>Level (10-15) Redemption Aura when Equipped</td></tr>
+					<tr><td>+(300-350) Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>14% Mana Stolen per Hit</td></tr>
+					<tr><td>-28% to Enemy Fire Resistance</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>+(350-400) Defense vs. Missile</td></tr>
+					<tr><td>+(15-21) Fire Absorb</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Storm (Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Um • Ohm • Ort • Nef</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>16% Ctc Level 21 Lightning on Striking</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(350-400)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>Adds 1-50 Lightning Damage</td></tr>
+					<tr><td>-(15-20)% to Enemy Lightning Resistance</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>+10 to Thunder Storm</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>Lightning Resist +(50-75)%</td></tr>
+					<tr><td>Lightning Absorb (15-25)%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Wisdom (Wands only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Lum</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>Regenerate Life +5</td></tr>
+					<tr><td>+2 to Mana (Based on CLvl)</td></tr>
+					<tr><td>Regenerate Mana 75%</td></tr>
+					<tr><td>Magic Resist +20%</td></tr>
+					<tr><td>+(3-5)% to Experience Gained</td></tr>
+					<tr><td>Reduced All Vendor Prices 10%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Plague</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Cham • Fal • Um</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>20% Ctc Level 12 Lower Resist when Struck</td></tr>
+					<tr><td>25% Ctc Level 15 Poison Nova on Striking</td></tr>
+					<tr><td>Level (13-17) Cleansing Aura when Equipped</td></tr>
+					<tr><td>+(1-2) to All Skills</td></tr>
+					<tr><td>+(260-380)% Damage to Demons</td></tr>
+					<tr><td>-(20-30)% to Enemy Poison Resistance</td></tr>
+					<tr><td>0.325% Deadly Strike (Based on CLvl)</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Doom (Axes/Hammers/Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Ohm • Um • Lo • Cham</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>5% Ctc Level 18 Volcano on Striking</td></tr>
+					<tr><td>Level 12 Holy Freeze Aura when Equipped</td></tr>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+45% Increased Attack Speed</td></tr>
+					<tr><td>+(330-370)% Enhanced Damage</td></tr>
+					<tr><td>-(40-60)% to Enemy Cold Resistance</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Pride (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Cham • Sur • Io • Lo</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>25% Ctc Level 17 Fire Wall when Struck</td></tr>
+					<tr><td>Level (16-20) Concentration Aura when Equipped</td></tr>
+					<tr><td>(260-300)% Bonus to Attack Rating</td></tr>
+					<tr><td>+4% Damage to Demons (Based on CLvl)</td></tr>
+					<tr><td>Adds 50-280 Lightning Damage</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>Hit Blinds Target</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>Regenerate Life +8</td></tr>
+					<tr><td>1.875% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Hand of Justice</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sur • Cham • Amn • Lo</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>100% Ctc Level 36 Blaze when You Level-Up</td></tr>
+					<tr><td>100% Ctc Level 48 Meteor when You Die</td></tr>
+					<tr><td>Level 12 Holy Fire Aura when Equipped</td></tr>
+					<tr><td>+33% Increased Attack Speed</td></tr>
+					<tr><td>+(280-330)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>-20% to Enemy Fire Resistance</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>Hit Blinds Target</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Armageddon</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ral • Ort • Thul • Cham • Ber • Hel</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>13% Ctc Level 27 Blizzard on Striking</td></tr>
+					<tr><td>7% Ctc Level 33 Meteor on Striking</td></tr>
+					<tr><td>17% Ctc Level 23 Chain Lightning on Striking</td></tr>
+					<tr><td>+30% Increased Attack Speed</td></tr>
+					<tr><td>+(275-350)% Enhanced Damage</td></tr>
+					<tr><td>Adds 55-330 Fire Damage</td></tr>
+					<tr><td>Adds 51-350 Lightning Damage</td></tr>
+					<tr><td>Adds 53-314 Cold Damage</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>All Resistances +35</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Morning (Polearms/Spears only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Mal • Ith • Ber • Cham • Amn • Ist</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>13% Ctc Level 22 Poison Bolt on Striking</td></tr>
+					<tr><td>100% Ctc Level 20 Static Field when You Kill</td></tr>
+					<tr><td>+3 to All Skills</td></tr>
+					<tr><td>+50% Increased Attack Speed</td></tr>
+					<tr><td>+(300-360)% Enhanced Damage</td></tr>
+					<tr><td>+9 to Maximum Damage</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>All Resistances +25</td></tr>
+					<tr><td>Attacker Takes Lightning Damage of (320-460)</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Peril (Missiles only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Cham • Lo • Ber • Ber • Lo • Cham</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+75% Increased Attack Speed</td></tr>
+					<tr><td>Adds (100-200)-(300-400) Damage</td></tr>
+					<tr><td>40% Chance of Crushing Blow</td></tr>
+					<tr><td>40% Deadly Strike</td></tr>
+					<tr><td>Freezes Target +6</td></tr>
+					<tr><td>+(20-30) to All Attributes</td></tr>
+					<tr><td>+10% Increased Dexterity</td></tr>
+					<tr><td>1% Magic Find (Based on CLvl)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Wings of Hope (Scepters only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Cham • Ber</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>25% Ctc Level 35 Bone Spear on Striking</td></tr>
+					<tr><td>Level 3 Salvation Aura when Equipped</td></tr>
+					<tr><td>+3 to Magic Skills</td></tr>
+					<tr><td>Adds (60-100)-(150-200)</td></tr>
+					<tr><td>20% Chance of Crushing Blow</td></tr>
+					<tr><td>Slain Monsters Rest in Peace</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>+20 to All Attributes</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Breath of the Dying</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Hel • El • Eld • Zod • Eth</th></tr>
+					<tr><th scope="col">Required Level: 69</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>50% Ctc Level 20 Poison Nova when You Kill An Enemy</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+60% Increased Attack Speed</td></tr>
+					<tr><td>+(330-360)% Enhanced Damage</td></tr>
+					<tr><td>-25% Target Defense</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>+200% Damage to Undead</td></tr>
+					<tr><td>+50 to AR against Undead</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>(7-9)% Life Stolen per Hit</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+(10-20) to All Attributes</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Reason (Staves only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lum • Lum • Zod • Tir</th></tr>
+					<tr><th scope="col">Required Level: 69</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level 5 Meditation Aura when Equipped</td></tr>
+					<tr><td>+3 to All Skills</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+80% Faster Cast Rate</td></tr>
+					<tr><td>Slain Monsters Rest in Peace</td></tr>
+					<tr><td>+20 to Energy</td></tr>
+					<tr><td>Physical Damage Reduced by 20%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>20% Damage Taken Goes to Mana</td></tr>
+					<tr><td>+(5-10)% to Experience Gained</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+			  </div>
+			</div>
+
+			<p>Torsos:</p>
+			<div class="jumbotron">
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Stealth</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tal • Eth</th></tr>
+					<tr><th scope="col">Required Level: 17</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(10-20)% Faster Run/Walk</td></tr>
+					<tr><td>+(10-20)% Faster Cast Rate</td></tr>
+					<tr><td>+(10-20)% Faster Hit Recovery</td></tr>
+					<tr><td>+6 to Dexterity</td></tr>
+					<tr><td>Regenerate Mana 15%</td></tr>
+					<tr><td>+15 Maximum Stamina</td></tr>
+					<tr><td>Poison Resist +30%</td></tr>
+					<tr><td>Magic Damage Reduced by 3</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Desire</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">El • Ral</th></tr>
+					<tr><th scope="col">Required Level: 19</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(30-50)% Enhanced Defense</td></tr>
+					<tr><td>+15 Defense</td></tr>
+					<tr><td>+5 to All Attributes</td></tr>
+					<tr><td>Fire Resist +30%</td></tr>
+					<tr><td>Attacker Takes Fire Damage of (12-24)</td></tr>
+					<tr><td>15% Magic Find</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Youth</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ort • Eth</th></tr>
+					<tr><th scope="col">Required Level: 21</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>9% Ctc Level 7 Weaken on Striking</td></tr>
+					<tr><td>+(90-120)% Enhanced Defense</td></tr>
+					<tr><td>Regenerate Life +(8-12)</td></tr>
+					<tr><td>Regenerate Mana 40%</td></tr>
+					<tr><td>All Resistances +30</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Myth</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Amn • Nef</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>3% Ctc Level 17 Howl when Struck</td></tr>
+					<tr><td>10% Ctc Level 7 Taunt on Striking</td></tr>
+					<tr><td>+2 to Barbarian Skills</td></tr>
+					<tr><td>+30 Defense vs. Missile</td></tr>
+					<tr><td>Regenerate Life +(24-32)</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+					<tr><td>Attacker Takes Physical Damage of (2-3) (Based on CLvl)</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Peace</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Thul • Amn</th></tr>
+					<tr><th scope="col">Required Level: 29</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>8% Ctc Level 15 Inner Sight when Struck</td></tr>
+					<tr><td>2% Ctc Level 15 Valkyrie on Striking</td></tr>
+					<tr><td>+2 to Amazon Skills</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+(2-3) to Critical Strike</td></tr>
+					<tr><td>+(4-6)% Increased Dexterity</td></tr>
+					<tr><td>Cold Resist +30%</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Dread</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • El • Ith</th></tr>
+					<tr><th scope="col">Required Level: 31</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 15 Charged Bolt on Striking</td></tr>
+					<tr><td>+20% Faster Run/Walk</td></tr>
+					<tr><td>+(100-125)% Enhanced Defense</td></tr>
+					<tr><td>+15 Defense</td></tr>
+					<tr><td>+0.5 to Strength (Based on CLvl)</td></tr>
+					<tr><td>+0.5 to Dexterity (Based on CLvl)</td></tr>
+					<tr><td>Regenerate Life +7</td></tr>
+					<tr><td>+(6-8) Life on Kill</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Smoke</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Nef • Lum</th></tr>
+					<tr><th scope="col">Required Level: 37</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+75% Enhanced Defense</td></tr>
+					<tr><td>+280 Defense vs. Missile</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>All Resistances +(30-45)</td></tr>
+					<tr><td>-1 to Light Radius</td></tr>
+					<tr><td>Level 6 Weaken (18 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Lionheart</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Lum • Fal</th></tr>
+					<tr><th scope="col">Required Level: 41</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(80-100)% Enhanced Damage</td></tr>
+					<tr><td>+(10-25) to Strength</td></tr>
+					<tr><td>+(10-15) to Dexterity</td></tr>
+					<tr><td>+(10-20) to Vitality</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>+50 to Life</td></tr>
+					<tr><td>All Resistances +(20-30)</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Wealth</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lem • Ko • Tir</th></tr>
+					<tr><th scope="col">Required Level: 43</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>300% Gold Find</td></tr>
+					<tr><td>100% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Enlightenment</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Pul • Ral • Sol</th></tr>
+					<tr><th scope="col">Required Level: 45</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>8% Ctc Level 17 Blaze when Struck</td></tr>
+					<tr><td>12% Ctc Level 23 Fire Ball on Striking</td></tr>
+					<tr><td>+2 to Sorceress Skills</td></tr>
+					<tr><td>+(20-30) Faster Cast Rate</td></tr>
+					<tr><td>+(1-3) to Warmth</td></tr>
+					<tr><td>+30% Enhanced Defense</td></tr>
+					<tr><td>Fire Resist +30%</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Principle</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ral • Pul • Eld</th></tr>
+					<tr><th scope="col">Required Level: 45</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>5% Ctc Level 12 Fist of the Heavens when Struck</td></tr>
+					<tr><td>13% Ctc Level 17 Holy Bolt on Striking</td></tr>
+					<tr><td>+2 to Paladin Skills</td></tr>
+					<tr><td>+50% Damage to Undead</td></tr>
+					<tr><td>+30% Enhanced Defense</td></tr>
+					<tr><td>+(50-100) to Life</td></tr>
+					<tr><td>15% Slower Stamina Drain</td></tr>
+					<tr><td>Fire Resist +30%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Treachery</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Thul • Lem</th></tr>
+					<tr><th scope="col">Required Level: 45</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>5% Ctc Level 7 Fade when Struck</td></tr>
+					<tr><td>25% Ctc Level 15 Venom on Striking</td></tr>
+					<tr><td>+2 to Assassin Skills</td></tr>
+					<tr><td>+45% Increased Attack Speed</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>Cold Resist +30%</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Duress</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Um • Thul</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+40% Faster Hit Recovery</td></tr>
+					<tr><td>+(40-80)% Enhanced Damage</td></tr>
+					<tr><td>Adds 37-133 Cold Damage</td></tr>
+					<tr><td>15% Chance of Crushing Blow</td></tr>
+					<tr><td>33% Chance of Open Wounds</td></tr>
+					<tr><td>+(150-200)% Enhanced Defense</td></tr>
+					<tr><td>-20% Slower Stamina Drain</td></tr>
+					<tr><td>Cold Resist +45%</td></tr>
+					<tr><td>Lightning Resist +15%</td></tr>
+					<tr><td>Fire Resist +15%</td></tr>
+					<tr><td>Poison Resist +15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Gloom</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Fal • Um • Pul</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>15% Ctc Level 9 Dim Vision when Struck</td></tr>
+					<tr><td>(10-30)% Faster Hit Recovery</td></tr>
+					<tr><td>+(200-260)% Enhanced Defense</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>All Resistances +45</td></tr>
+					<tr><td>Magic Damage Reduced by (4-10)</td></tr>
+					<tr><td>Half Freeze Duration</td></tr>
+					<tr><td>5% Damage Taken Goes to Mana</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Bone</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sol • Um • Um</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>15% Ctc Level 12 Bone Armor when Struck</td></tr>
+					<tr><td>15% Ctc Level 22 Bone Spear on Striking</td></tr>
+					<tr><td>+2 to Necromancer Skills</td></tr>
+					<tr><td>+(10-15)% to Magic Skill Damage</td></tr>
+					<tr><td>+(100-150) to Mana</td></tr>
+					<tr><td>All Resistances +30</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Voice</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sol • Um • Um</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(10-15)% to Fire Skill Damage</td></tr>
+					<tr><td>+(10-15)% to Lightning Skill Damage</td></tr>
+					<tr><td>+(10-15)% to Cold Skill Damage</td></tr>
+					<tr><td>+1 to Mana (Based on CLvl)</td></tr>
+					<tr><td>All Resistances +(22-25)</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Rain</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ort • Mal • Ith</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 15 Cyclone Armor when Struck</td></tr>
+					<tr><td>7% Ctc Level 15 Tornado on Striking</td></tr>
+					<tr><td>+1 to Summoning Skills (Druid Only)</td></tr>
+					<tr><td>+2 to Druid Skills</td></tr>
+					<tr><td>+(75-125) to Mana</td></tr>
+					<tr><td>Lightning Resist +30%</td></tr>
+					<tr><td>Magic Damage Reduced by 7</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Prudence</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Mal • Tir</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+20% Faster Cast Rate</td></tr>
+					<tr><td>+25% Faster Hit Recovery</td></tr>
+					<tr><td>+(140-170)% Enhanced Defense</td></tr>
+					<tr><td>All Resistances +(25-35)</td></tr>
+					<tr><td>Physical Damage Reduced by (5-13)</td></tr>
+					<tr><td>Magic Damage Reduced by (13-17)</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>Repairs 1 Durability in 4 seconds</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Glory</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ist • Ist • Tal • Ral</th></tr>
+					<tr><th scope="col">Required Level: 51</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+35% Faster Cast Rate</td></tr>
+					<tr><td>+25% Faster Hit Recovery</td></tr>
+					<tr><td>+(75-125)% Enhanced Defense</td></tr>
+					<tr><td>Increase Maximum Life (10-20)%</td></tr>
+					<tr><td>Increase Maximum Mana (10-20)%</td></tr>
+					<tr><td>Fire Resist +30%</td></tr>
+					<tr><td>Poison Resist +30%</td></tr>
+					<tr><td>Magic Find 50%</td></tr>
+					<tr><td>Requirements -30%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Flame</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Ral • Ko</th></tr>
+					<tr><th scope="col">Required Level: 55</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>20% Ctc Level 19 Fire Ball when Struck</td></tr>
+					<tr><td>8% Ctc Level 13 Fissure on Attack</td></tr>
+					<tr><td>Level (13-17) Holy Fire Aura when Equipped</td></tr>
+					<tr><td>+(10-20)% to Fire Skill Damage</td></tr>
+					<tr><td>-(10-20)% to Enemy Fire Resistance</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>+5% to Maximum Fire Resist</td></tr>
+					<tr><td>Fire Resist +30%</td></tr>
+					<tr><td>Fire Absorb (8-12)%</td></tr>
+					<tr><td>+5 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Trust</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Ohm • Fal</th></tr>
+					<tr><th scope="col">Required Level: 57</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>15% Ctc Level 27 Energy Shield when Struck</td></tr>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+30% Faster Run/Walk</td></tr>
+					<tr><td>+50% Faster Hit Recovery</td></tr>
+					<tr><td>+(125-200)% Enhanced Defense</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>+(40-60) to Energy</td></tr>
+					<tr><td>+(75-100) to Life</td></tr>
+					<tr><td>+5% to Maximum Cold Resist</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Fortitude</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">El • Sol • Dol • Lo</th></tr>
+					<tr><th scope="col">Required Level: 59</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 5 Chilling Armor when Struck</td></tr>
+					<tr><td>+(20-25)% Faster Cast Rate</td></tr>
+					<tr><td>+(175-225)% Enhanced Damage</td></tr>
+					<tr><td>+(175-225)% Enhanced Defense</td></tr>
+					<tr><td>+15 Defense</td></tr>
+					<tr><td>+(1-1.5) to Life (Based on CLvl)</td></tr>
+					<tr><td>Regenerate Life +7</td></tr>
+					<tr><td>+5% to Maximum Lightning Resist</td></tr>
+					<tr><td>All Resistances +(25-30)</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+					<tr><td>12% Damage Taken Goes to Mana</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Night</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Lo • Ohm</th></tr>
+					<tr><th scope="col">Required Level: 59</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>(1-1.5) to Maximum Damage (Based on CLvl)</td></tr>
+					<tr><td>+(150-300)% Enhanced Defense</td></tr>
+					<tr><td>+(1-1.5) Defense (Based on CLvl)</td></tr>
+					<tr><td>+(0.5-0.75) to Vitality (Based on CLvl)</td></tr>
+					<tr><td>+(0.5-0.75) to Energy (Based on CLvl)</td></tr>
+					<tr><td>+5% to Maximum Cold Resist</td></tr>
+					<tr><td>+5% to Maximum Lightning Resist</td></tr>
+					<tr><td>(1.5-2)% Gold Find</td></tr>
+					<tr><td>(0.5-0.75)% Magic Find</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Stone</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Um • Pul • Lum</th></tr>
+					<tr><th scope="col">Required Level: 61</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+60% Faster Hit Recovery</td></tr>
+					<tr><td>+(170-260)% Enhanced Defense</td></tr>
+					<tr><td>+(10-16) to Strength</td></tr>
+					<tr><td>+(10-16) to Vitality</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>All Resistances +15</td></tr>
+					<tr><td>Level 16 Clay Golem (36 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Dragon</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sur • Lo • Sol</th></tr>
+					<tr><th scope="col">Required Level: 61</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>20% Ctc Level 18 Venom when Struck</td></tr>
+					<tr><td>12% Ctc Level 28 Hydra on Striking</td></tr>
+					<tr><td>Level 14 Holy Fire Aura when Equipped</td></tr>
+					<tr><td>+360 Defense</td></tr>
+					<tr><td>+230 Defense vs. Missile</td></tr>
+					<tr><td>+(3-5) to All Attributes</td></tr>
+					<tr><td>+0.375 to Strength (Based on CLvl)</td></tr>
+					<tr><td>Increase Maximum Mana 5%</td></tr>
+					<tr><td>+5% to Maximum Lightning Resist</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Bramble</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ral • Ohm • Sur • Eth</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (15-21) Thorns Aura when Equipped</td></tr>
+					<tr><td>+50% Faster Hit Recovery</td></tr>
+					<tr><td>+(30-50)% to Poison Skill Damage</td></tr>
+					<tr><td>+300 Defense</td></tr>
+					<tr><td>Increase Maximum Mana 5%</td></tr>
+					<tr><td>Regenerate Mana 15%</td></tr>
+					<tr><td>+5% to Maximum Cold Resist</td></tr>
+					<tr><td>Fire Resist +30%</td></tr>
+					<tr><td>Poison Resist +100%</td></tr>
+					<tr><td>+13 Life on Kill</td></tr>
+					<tr><td>Level 13 Spirit of Barbs (33 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Chains of Honor</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • Um • Ber • Ist</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+200% Damage to Demons</td></tr>
+					<tr><td>+200% Damage to Undead</td></tr>
+					<tr><td>8% Life Stolen per Hit</td></tr>
+					<tr><td>+70% Enhanced Defense</td></tr>
+					<tr><td>+20 to Strength</td></tr>
+					<tr><td>Regenerate Life +7</td></tr>
+					<tr><td>All Resistances +(40-60)</td></tr>
+					<tr><td>Physical Damage Reduced by 8%</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Knight's Vigil</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ber • Lem • Um • Ist</th></tr>
+					<tr><th scope="col">Required Level: 63</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (8-12) Meditation Aura when Equipped</td></tr>
+					<tr><td>+2 to Lightning Skills</td></tr>
+					<tr><td>+40% Faster Cast Rate</td></tr>
+					<tr><td>+20% Faster Block Rate</td></tr>
+					<tr><td>(20-30)% Increased Chance of Blocking</td></tr>
+					<tr><td>Regenerate Life +(10-15)</td></tr>
+					<tr><td>All Resistances +15</td></tr>
+					<tr><td>Physical Damage Reduced by 8%</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Enigma</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Ith • Ber</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+25% Faster Run/Walk</td></tr>
+					<tr><td>+3 to Blink</td></tr>
+					<tr><td>+(500-775) Defense</td></tr>
+					<tr><td>+(0.5-0.75) to Strength (Based on CLvl)</td></tr>
+					<tr><td>Increase Maximum Life 5%</td></tr>
+					<tr><td>+10% Increased Strength</td></tr>
+					<tr><td>Physical Damage Reduced by 8%</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+					<tr><td>+(0.5-0.75)% Magic Find (Based on CLvl)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Woe</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Cham • Tir • Shael</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>13% Ctc Level 29 Fist of the Heavens when Struck</td></tr>
+					<tr><td>17% Ctc Level 26 Fist of the Heavens when Struck</td></tr>
+					<tr><td>15% Ctc Level 37 Fist of the Heavens when Struck</td></tr>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+25 to All Attributes</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+					<tr><td>10% Reanimate as: Gloam</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>Curse Length Reduced by 75%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				 <details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Starlight</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Zod • Hel • Ist • El</th></tr>
+					<tr><th scope="col">Required Level: 69</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>17% Ctc Level 23 Fist of the Heavens when Struck</td></tr>
+					<tr><td>+3 to All Skills</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+(100-200)% Enhanced Defense</td></tr>
+					<tr><td>+15 Defense</td></tr>
+					<tr><td>Curse Length Reduced by 50%</td></tr>
+					<tr><td>(225-275)% Magic Find</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+					<tr><td>Requirements -50%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+			  </div>
+			</div>
+			
+			<p>Shields:</p>
+			<div class="jumbotron">
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Chance</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Eth • Ith • Tir</th></tr>
+					<tr><th scope="col">Required Level: 15</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+15% Faster Cast Rate</td></tr>
+					<tr><td>+20% Faster Block Rate</td></tr>
+					<tr><td>15% Increased Chance of Blocking</td></tr>
+					<tr><td>+(20-40) to Mana</td></tr>
+					<tr><td>Regenerate Mana 15%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+					<tr><td>30% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Penitence</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Eth • Ith • Tir</th></tr>
+					<tr><th scope="col">Required Level: 15</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+15% Faster Hit Recovery</td></tr>
+					<tr><td>+20% Faster Block Rate</td></tr>
+					<tr><td>Half Freeze Duration</td></tr>
+					<tr><td>Poison Length Reduced by 50%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+					<tr><td>Repairs 1 Durability in 10 seconds</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Passion</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Nef • Eld • Ral</th></tr>
+					<tr><th scope="col">Required Level: 19</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+15% Faster Run Walk</td></tr>
+					<tr><td>7% Increased Chance of Blocking</td></tr>
+					<tr><td>+30 Defense vs. Missile</td></tr>
+					<tr><td>+(20-25) to Life</td></tr>
+					<tr><td>+5% Increased Vitality</td></tr>
+					<tr><td>Fire Resist +35%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>+(3-5) Life on Kill</td></tr>
+					<tr><td>Attacker Takes Fire Damage of 35</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Ancients' Pledge</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ral • Ort • Tal</th></tr>
+					<tr><th scope="col">Required Level: 21</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+50% Enhanced Defense</td></tr>
+					<tr><td>Cold Resist +43%</td></tr>
+					<tr><td>Lightning Resist +48%</td></tr>
+					<tr><td>Fire Resist +48%</td></tr>
+					<tr><td>Poison Resist +48%</td></tr>
+					<tr><td>10% Damage Taken Goes to Mana</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Prayer</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Hel • Eth • Thul</th></tr>
+					<tr><th scope="col">Required Level: 23</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (5-9) Prayer Aura when Equipped</td></tr>
+					<tr><td>+15% Increased Attack Speed</td></tr>
+					<tr><td>20% Increased Chance of Blocking</td></tr>
+					<tr><td>Adds 10-30 Damage</td></tr>
+					<tr><td>+(50-75) Defense</td></tr>
+					<tr><td>Regenerate Mana 15%</td></tr>
+					<tr><td>Cold Resist +(50-60)%</td></tr>
+					<tr><td>Lightning Resist +(15-25)%</td></tr>
+					<tr><td>Fire Resist +(15-25)%</td></tr>
+					<tr><td>Poison Resist +(15-25)%</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Spirit</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tal • Thul • Ort • Amn</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(25-35)% Faster Cast Rate</td></tr>
+					<tr><td>+(25-35)% Faster Hit Recovery</td></tr>
+					<tr><td>+(11-22) to Vitality</td></tr>
+					<tr><td>+(59-82) to Mana</td></tr>
+					<tr><td>Cold Resist +35%</td></tr>
+					<tr><td>Lightning Resist +35%</td></tr>
+					<tr><td>Poison Resist +35%</td></tr>
+					<tr><td>+(5-10) Magic Absorb</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+					<tr><td>Requirements -25%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Revenge</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Thul • Eld</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to Cold Skills</td></tr>
+					<tr><td>+15% Faster Cast Rate</td></tr>
+					<tr><td>7% Increased Chance of Blocking</td></tr>
+					<tr><td>+(50-75) to Mana</td></tr>
+					<tr><td>Regenerate Mana 50%</td></tr>
+					<tr><td>Magic Resist +20%</td></tr>
+					<tr><td>Cold Resist +35%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Rhyme</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Eth</th></tr>
+					<tr><th scope="col">Required Level: 29</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+40% Faster Block Rate</td></tr>
+					<tr><td>20% Increased Chance of Blocking</td></tr>
+					<tr><td>Regenerate Mana 15%</td></tr>
+					<tr><td>All Resistances +25</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Splendor</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Eth • Lum</th></tr>
+					<tr><th scope="col">Required Level: 37</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(20-35) Faster Cast Rate</td></tr>
+					<tr><td>+20% Faster Block Rate</td></tr>
+					<tr><td>+(60-100) Enhanced Defense</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>Regenerate Mana 15%</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+					<tr><td>(15-30)% Magic Find</td></tr>
+					<tr><td>+3 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Fortune</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Fal • Io</th></tr>
+					<tr><th scope="col">Required Level: 41</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+(30-50) to Life</td></tr>
+					<tr><td>All Resistances +10</td></tr>
+					<tr><td>150% Gold Find</td></tr>
+					<tr><td>0.625% Magic Find (Based on CLvl)</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Sanctuary</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ko • Ko • Mal</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+20% Faster Block Rate</td></tr>
+					<tr><td>20% Increased Chance of Blocking</td></tr>
+					<tr><td>+(130-160) Enhanced Defense</td></tr>
+					<tr><td>+20 to Dexterity</td></tr>
+					<tr><td>All Resistances +(35-50)</td></tr>
+					<tr><td>Magic Damage Reduced by 7</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+					<tr><td>Curse Length Reduced by 20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Loyalty</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Dol</th></tr>
+					<tr><th scope="col">Required Level: 55</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (5-9) Thorns Aura when Equipped</td></tr>
+					<tr><td>(35-50)% Increased Chance of Blocking</td></tr>
+					<tr><td>-(10-15)% to Enemy Physical Resistance</td></tr>
+					<tr><td>Regenerate Life +7</td></tr>
+					<tr><td>+5% to All Maximum Resistances</td></tr>
+					<tr><td>All Resistances +(60-80)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Dragon</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sur • Lo • Sol</th></tr>
+					<tr><th scope="col">Required Level: 61</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>20% Ctc Level 18 Venom when Struck</td></tr>
+					<tr><td>12% Ctc Level 28 Hydra on Striking</td></tr>
+					<tr><td>Level 14 Holy Fire Aura when Equipped</td></tr>
+					<tr><td>+360 Defense</td></tr>
+					<tr><td>+230 Defense vs. Missile</td></tr>
+					<tr><td>+(3-5) to All Attributes</td></tr>
+					<tr><td>+0.375 to Strength (Based on CLvl)</td></tr>
+					<tr><td>+50 to Mana</td></tr>
+					<tr><td>+5% to Maximum Lightning Resist</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Dream</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Jah • Pul</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>10% Ctc Level 15 Confuse when Struck</td></tr>
+					<tr><td>Level 13 Holy Shock Aura when Equipped</td></tr>
+					<tr><td>+(20-30)% Faster Hit Recovery</td></tr>
+					<tr><td>+30% Enhanced Defense</td></tr>
+					<tr><td>+(150-220) Defense</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+50 to Life</td></tr>
+					<tr><td>+0.625 to Mana (Based on CLvl)</td></tr>
+					<tr><td>All Resistances +(5-20)</td></tr>
+					<tr><td>(12-25)% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Phoenix</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Vex • Lo • Jah</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>100% Ctc Level 40 Blaze when You Level-Up</td></tr>
+					<tr><td>10% Ctc Level 22 Fire Ball on Striking</td></tr>
+					<tr><td>Level (10-15) Redemption Aura when Equipped</td></tr>
+					<tr><td>+(300-350) Enhanced Damage</td></tr>
+					<tr><td>-28% to Enemy Fire Resistance</td></tr>
+					<tr><td>+(350-400) Defense vs. Missile</td></tr>
+					<tr><td>+50 to Life</td></tr>
+					<tr><td>+5% to Maximum Lightning Resist</td></tr>
+					<tr><td>+10% to Maximum Fire Resist</td></tr>
+					<tr><td>+(15-21) Fire Absorb</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Purity</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Ist • Shael • Um</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>10% Ctc Level 19 Bone Armor when Struck</td></tr>
+					<tr><td>35% Ctc Level 8 Dim Vision on Striking</td></tr>
+					<tr><td>+60% Faster Hit Recovery</td></tr>
+					<tr><td>+20% Faster Block Rate</td></tr>
+					<tr><td>55% Increased Chance of Blocking</td></tr>
+					<tr><td>+4 Defense (Based on CLvl)</td></tr>
+					<tr><td>+50 to Life</td></tr>
+					<tr><td>All Resistances +22</td></tr>
+					<tr><td>+15 Life on Kill</td></tr>
+					<tr><td>Curse Length Reduced by 50%</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+			  </div>
+			</div>
+
+			<p>Helmets:</p>
+			<div class="jumbotron">
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Nadir</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Nef • Tir</th></tr>
+					<tr><th scope="col">Required Level: 13</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+50% Enhanced Defense</td></tr>
+					<tr><td>+10 Defense</td></tr>
+					<tr><td>+30 Defense vs. Missile</td></tr>
+					<tr><td>+5 to Strength</td></tr>
+					<tr><td>+(3-5) Mana on Kill</td></tr>
+					<tr><td>-33% Gold Find</td></tr>
+					<tr><td>-3 to Light Radius</td></tr>
+					<tr><td>Level 13 Cloak of Shadows (9 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Lore</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ort • Sol</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(5-10) to Energy</td></tr>
+					<tr><td>Lightning Resist +30%</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+					<tr><td>+(1-2) Mana on Kill</td></tr>
+					<tr><td>+2 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Radiance</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Nef • Sol • Ith</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(20-40) Enhanced Damage</td></tr>
+					<tr><td>+75% Enhanced Defense</td></tr>
+					<tr><td>+30 Defense vs. Missile</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>+33 to Mana</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+					<tr><td>+5 to Light Radius</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Mist</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Eth • Dol</th></tr>
+					<tr><th scope="col">Required Level: 35</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>9% Ctc Level 15 Cloak of Shadows when Struck</td></tr>
+					<tr><td>12% Ctc Level 16 Bone Spirit on Striking</td></tr>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+15% Increased Attack Speed</td></tr>
+					<tr><td>-(5-10)% to Enemy Magic Resistance</td></tr>
+					<tr><td>+(5-10)% to Magic Skill Damage</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+(35-50) to Life</td></tr>
+					<tr><td>Regenerate Life +7</td></tr>
+					<tr><td>Regenerate Mana 15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">War</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Hel</th></tr>
+					<tr><th scope="col">Required Level: 35</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+30% Increased Attack Speed</td></tr>
+					<tr><td>+25% Faster Hit Recovery</td></tr>
+					<tr><td>+(35-50)% Enhanced Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+(100-140)% Enhanced Defense</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>Physical Damage Reduced by 15%</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Siren's Song (Circlets only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lem • Shael</th></tr>
+					<tr><th scope="col">Required Level: 43</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>5% Ctc Level 13 Confuse when Struck</td></tr>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+20% Faster Cast Rate</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+1 Defense (Based on CLvl)</td></tr>
+					<tr><td>+10 to All Attributes</td></tr>
+					<tr><td>Increase Maximum Mana 20%</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+					<tr><td>(15-30)% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Piety</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lem • Nef • Shael</th></tr>
+					<tr><th scope="col">Required Level: 43</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+20% Faster Cast Rate</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+(90-125) Enhanced Defense</td></tr>
+					<tr><td>+30 Defense vs. Missile</td></tr>
+					<tr><td>+20 to Energy</td></tr>
+					<tr><td>+1 to Mana (Based on CLvl)</td></tr>
+					<tr><td>Magic Resist +(15-25)%</td></tr>
+					<tr><td>All Resistances +(15-25)%</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Blood</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Mal • Shael</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 22 Poison Bolt when Struck</td></tr>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+50% Enhanced Damage</td></tr>
+					<tr><td>+(125-175) Defense</td></tr>
+					<tr><td>Increase Maximum Life (10-15)%</td></tr>
+					<tr><td>Physical Damage Reduced by (10-15)%</td></tr>
+					<tr><td>Magic Damage Reduced by 7</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Delirium</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lem • Ist • Io</th></tr>
+					<tr><th scope="col">Required Level: 51</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>6% Ctc Level 14 Mind Blast when Struck</td></tr>
+					<tr><td>14% Ctc Level 13 Terror when Struck</td></tr>
+					<tr><td>11% Ctc Level 18 Confuse on Striking</td></tr>
+					<tr><td>+2 to All Skills</td></tr>
+					<tr><td>+(5-10)% to Magic Skill Damage</td></tr>
+					<tr><td>+261 Defense</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>10% Reanimate As: Undead Soul Killer</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Dream</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Io • Jah • Pul</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>10% Ctc Level 15 Confuse when Struck</td></tr>
+					<tr><td>Level 13 Holy Shock Aura when Equipped</td></tr>
+					<tr><td>+(20-30)% Faster Hit Recovery</td></tr>
+					<tr><td>+30% Enhanced Defense</td></tr>
+					<tr><td>+(150-220) Defense</td></tr>
+					<tr><td>+10 to Vitality</td></tr>
+					<tr><td>+50 to Life</td></tr>
+					<tr><td>+0.625 to Mana (Based on CLvl)</td></tr>
+					<tr><td>All Resistances +(5-20)</td></tr>
+					<tr><td>(12-25)% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Question (Circlets only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Ber • Cham • Ist</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>33% Ctc Level 17 Attract when Struck</td></tr>
+					<tr><td>+4 to All Skills</td></tr>
+					<tr><td>+25 to All Attributes</td></tr>
+					<tr><td>+(100-150) to Life</td></tr>
+					<tr><td>Regenerate Life +20</td></tr>
+					<tr><td>+(60-100) to Mana</td></tr>
+					<tr><td>Regenerate Mana 100%</td></tr>
+					<tr><td>Physical Damage Reduced by 8%</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Authority</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Cham • Zod • Ber</th></tr>
+					<tr><th scope="col">Required Level: 69</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>16% Ctc Level 9 Weaken on Striking</td></tr>
+					<tr><td>+3 to All Skills</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+(25-35)% Faster Hit Recovery</td></tr>
+					<tr><td>25% Deadly Strike</td></tr>
+					<tr><td>Slows Target by 20%</td></tr>
+					<tr><td>+(160-200)% Enhanced Defense</td></tr>
+					<tr><td>Physical Damage Reduced by 8%</td></tr>
+					<tr><td>Cannot Be Frozen</td></tr>
+					<tr><td>1.5-1.75% Magic Find (Based on CLvl)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+			  </div>
+			</div>
+
+			<p>Class-specific items:</p>
+			<div class="jumbotron">
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Pattern (Assassin Claws only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tal • Ort • Tir</th></tr>
+					<tr><th scope="col">Required Level: 21</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+30% Faster Block Rate</td></tr>
+					<tr><td>+(40-80)% Enhanced Damage</td></tr>
+					<tr><td>10% Bonus to Attack Rating</td></tr>
+					<tr><td>Adds 17-62 Fire Damage</td></tr>
+					<tr><td>Adds 1-50 Lightning Damage</td></tr>
+					<tr><td>+75 Poison Damage over 5 seconds</td></tr>
+					<tr><td>+6 to Strength</td></tr>
+					<tr><td>+6 to Dexterity</td></tr>
+					<tr><td>All Resistances +15</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Nature's Kingdom (Druid Pelts only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Ith</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to Druid Skills</td></tr>
+					<tr><td>+20% Faster Cast Rate</td></tr>
+					<tr><td>+(1-2) to Molten Boulder (Druid Only)</td></tr>
+					<tr><td>+(75-100)% Enhanced Defense</td></tr>
+					<tr><td>+(40-60) to Mana</td></tr>
+					<tr><td>All Resistances +20</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+					<tr><td>15% Damage Taken Goes to Mana</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Hunger (Druid Pelts only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Amn • Hel</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to Druid Skills</td></tr>
+					<tr><td>5% Life Stolen per Hit</td></tr>
+					<tr><td>+(1-3) Hunger (Druid Only)</td></tr>
+					<tr><td>Drain Life -3</td></tr>
+					<tr><td>Magic Resist +20%</td></tr>
+					<tr><td>All Resistances +20</td></tr>
+					<tr><td>Physical Damage Reduced by (8-12)%</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Punishment (Necromancer Heads only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • Hel</th></tr>
+					<tr><th scope="col">Required Level: 25</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>13% Ctc Level 13 Teleport when Struck</td></tr>
+					<tr><td>+1 to Necromancer Skills</td></tr>
+					<tr><td>40% Increased Chance of Blocking</td></tr>
+					<tr><td>+100% Enhanced Defense</td></tr>
+					<tr><td>+50 to Life</td></tr>
+					<tr><td>+50 to Mana</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Truth (Sorceress Orbs only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sol • Ith</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to Magic Skills</td></tr>
+					<tr><td>+20% Faster Cast Rate</td></tr>
+					<tr><td>+9 to Minimum Damage</td></tr>
+					<tr><td>+9 to Maximum Damage</td></tr>
+					<tr><td>+(3-5) to Bone Spear</td></tr>
+					<tr><td>+20 to Life</td></tr>
+					<tr><td>+35 to Mana</td></tr>
+					<tr><td>Regenerate Mana 75%</td></tr>
+					<tr><td>Magic Damage Reduced by (4-7)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Void (Barbarian Helms only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sol • Amn</th></tr>
+					<tr><th scope="col">Required Level: 27</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to Barbarian Skills</td></tr>
+					<tr><td>+25% Faster Run/Walk</td></tr>
+					<tr><td>+25% Faster Hit Recovery</td></tr>
+					<tr><td>+(10-15) to Maximum Damage</td></tr>
+					<tr><td>(3-6)% Mana Stolen per Hit</td></tr>
+					<tr><td>(3-6)% Life Stolen per Hit</td></tr>
+					<tr><td>+50 to Life</td></tr>
+					<tr><td>Physical Damage Reduced by 7</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Serendipity (Sorceress Orbs only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • Dol</th></tr>
+					<tr><th scope="col">Required Level: 31</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 11 Inner Sight when Struck</td></tr>
+					<tr><td>+1 to All Skills</td></tr>
+					<tr><td>+(30-40)% Faster Cast Rate</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>+15 to Energy</td></tr>
+					<tr><td>Regenerate Mana (35-50)%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Beauty (Amazon Bows only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • Tir</th></tr>
+					<tr><th scope="col">Required Level: 31</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(1-2) Bow and Crossbow Skills (Amazon Only)</td></tr>
+					<tr><td>Adds 30-60 Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>8% Life Stolen per Hit</td></tr>
+					<tr><td>50% Chance of Open Wounds</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>Slows Target by 15%</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Heaven's Will (Paladin Shields only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • Eld</th></tr>
+					<tr><th scope="col">Required Level: 31</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+1 to Paladin Skills</td></tr>
+					<tr><td>+30% Faster Block Rate</td></tr>
+					<tr><td>57% Increased Chance of Blocking</td></tr>
+					<tr><td>+(30-50)% Enhanced Damage</td></tr>
+					<tr><td>-(5-10)% to Enemy Magic Resistance</td></tr>
+					<tr><td>+(2-4) to Fist of the Heavens (Paladin Only)</td></tr>
+					<tr><td>Regenerate Life +7</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Valor (Assassin Claws only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Dol • Nef</th></tr>
+					<tr><th scope="col">Required Level: 31</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>7% Ctc Level 10 Poison Nova on Striking</td></tr>
+					<tr><td>+1 to Assassin Skills</td></tr>
+					<tr><td>Adds 35-70 Damage</td></tr>
+					<tr><td>(4-6)% Life Stolen per Hit</td></tr>
+					<tr><td>Hit Causes Monster to Flee 25%</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>+10 to All Attributes</td></tr>
+					<tr><td>+40 to Life</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Tempest (Assassin Claws only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lem • Thul</th></tr>
+					<tr><th scope="col">Required Level: 43</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(2-3) to Traps (Assassin Only)</td></tr>
+					<tr><td>+2 to Assassin Skills</td></tr>
+					<tr><td>+(175-225)% Enhanced Damage</td></tr>
+					<tr><td>Adds 100-200 Fire Damage</td></tr>
+					<tr><td>Adds 1-300 Lightning Damage</td></tr>
+					<tr><td>Adds 33-84 Cold Damage</td></tr>
+					<tr><td>+(10-20)% to Lightning Skill Damage</td></tr>
+					<tr><td>75% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Love (Amazon Bows only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Pul • Hel • El</th></tr>
+					<tr><th scope="col">Required Level: 45</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to Amazon Skills</td></tr>
+					<tr><td>+40% Increased Attack Speed</td></tr>
+					<tr><td>Fires Explosive Arrows or Bolts</td></tr>
+					<tr><td>+(190-220)% Enhanced Damage</td></tr>
+					<tr><td>+50 to Attack Rating</td></tr>
+					<tr><td>+75% Damage to Demons</td></tr>
+					<tr><td>+100 to AR against Demons</td></tr>
+					<tr><td>(25-50)% Deadly Strike</td></tr>
+					<tr><td>+75 to Life</td></tr>
+					<tr><td>+50 to Mana</td></tr>
+					<tr><td>+1 to Light Radius</td></tr>
+					<tr><td>Requirements -20%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Oblivion (Barbarian Helms only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Um • Fal • Ko</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>12% Ctc Level 9 Terror on Striking</td></tr>
+					<tr><td>+2 to Barbarian Skills</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>25% Chance of Crushing Blow</td></tr>
+					<tr><td>+3 to Random Barbarian Skill</td></tr>
+					<tr><td>+(115-160)% Enhanced Defense</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>+10 to Dexterity</td></tr>
+					<tr><td>+1.5 to Life (Based on CLvl)</td></tr>
+					<tr><td>All Resistances +15</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Judgement (Paladin Shields only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Um • Hel • Um</th></tr>
+					<tr><th scope="col">Required Level: 47</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>2% Ctc Level 35 Holy Shield when Struck</td></tr>
+					<tr><td>25% Ctc Level 8 Decrepify when Struck</td></tr>
+					<tr><td>+2 to Paladin Skills</td></tr>
+					<tr><td>(25-35)% Increased Chance of Blocking</td></tr>
+					<tr><td>+(20-30) to Maximum Damage</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>All Resistances +44</td></tr>
+					<tr><td>Magic Damage Reduced by (16-24)</td></tr>
+					<tr><td>Requirements -15%</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Terror (Necromancer Heads only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Lum • Mal</th></tr>
+					<tr><th scope="col">Required Level: 49</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>25% Ctc Level 17 Terror when Struck</td></tr>
+					<tr><td>+2 to Necromancer Skills</td></tr>
+					<tr><td>+25% Faster Cast Rate</td></tr>
+					<tr><td>-(10-15)% to Enemy Magic Resistance</td></tr>
+					<tr><td>+(2-3) to Bone Spear (Necromancer Only)</td></tr>
+					<tr><td>+1.5 to Defense (Based on CLvl)</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>Magic Damage Reduced by 7</td></tr>
+					<tr><td>0.75% Magic Find (Based on CLvl)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Thought (Sorceress Orbs only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Tir • Lum • Ist</th></tr>
+					<tr><th scope="col">Required Level: 51</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level 7 Holy Shock Aura when Equipped</td></tr>
+					<tr><td>+(2-3) to Lightning Skills</td></tr>
+					<tr><td>+20% Faster Cast Rate</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>15% Increased Chance of Blocking</td></tr>
+					<tr><td>-(15-25)% to Enemy Lightning Resistance</td></tr>
+					<tr><td>+10 to Energy</td></tr>
+					<tr><td>Regenerate Mana (50-75)%</td></tr>
+					<tr><td>+2 Mana on Kill</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Still Water (Amazon Bows only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Gul • Um • Mal • Nef</th></tr>
+					<tr><th scope="col">Required Level: 53</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+(1-3) Bow and Crossbow Skills (Amazon Only)</td></tr>
+					<tr><td>+1 to Amazon Skills</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(80-120)% Enhanced Damage</td></tr>
+					<tr><td>Adds 30-150 Damage</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>Adds 100-150 Cold Damage</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Knockback</td></tr>
+					<tr><td>+(15-20) Life on Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Mystery (Druid Pelts only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Lem • Gul</th></tr>
+					<tr><th scope="col">Required Level: 53</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+2 to Druid Skills</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+20% Faster Hit Recovery</td></tr>
+					<tr><td>+1 to Random Druid Skill (Druid Skill)</td></tr>
+					<tr><td>+2 to Random Druid Skill (Druid Skill)</td></tr>
+					<tr><td>Increase Maximum Life 15%</td></tr>
+					<tr><td>Increase Maximum Mana 15%</td></tr>
+					<tr><td>+5% to Maximum Poison Resist</td></tr>
+					<tr><td>All Resistances +(30-50)</td></tr>
+					<tr><td>50% Gold Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Chaos (Assassin Claws only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Fal • Ohm • Um</th></tr>
+					<tr><th scope="col">Required Level: 57</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>18% Ctc Level 21 Frozen Orb on Striking</td></tr>
+					<tr><td>11% Ctc Level 29 Charged Bolt on Striking</td></tr>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+(290-340)% Enhanced Damage</td></tr>
+					<tr><td>Adds 216-471 Magic Damage</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>+3 to Whirlwind</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>+15 Life on Demon Kill</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Exile (Paladin Shields only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Vex • Ohm • Ist • Dol</th></tr>
+					<tr><th scope="col">Required Level: 57</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>15% Ctc Level 15 Amplify Damage on Striking</td></tr>
+					<tr><td>Level (13-16) Defiance Aura when Equipped</td></tr>
+					<tr><td>+2 to Offensive Auras (Paladin Only)</td></tr>
+					<tr><td>+30% Faster Block Rate</td></tr>
+					<tr><td>Freezes Target</td></tr>
+					<tr><td>+(220-260) Enhanced Defense</td></tr>
+					<tr><td>Regenerate Life +7</td></tr>
+					<tr><td>+5% to Maximum Cold Resist</td></tr>
+					<tr><td>+5% to Maximum Fire Resist</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+					<tr><td>Repairs 1 Durability in 4 seconds</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Tradition (Amazon Bows only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Sur • Lo • Ohm • Gul • Ist</th></tr>
+					<tr><th scope="col">Required Level: 61</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>+3 to Amazon Skills</td></tr>
+					<tr><td>+50% Increased Attack Speed</td></tr>
+					<tr><td>+(375-450)% Enhanced Damage</td></tr>
+					<tr><td>20% Bonus to Attack Rating</td></tr>
+					<tr><td>10% Mana Stolen per Hit</td></tr>
+					<tr><td>+25% to Fire Skill Damage</td></tr>
+					<tr><td>-25% to Enemy Fire Resistance</td></tr>
+					<tr><td>10% Life Stolen per Hit</td></tr>
+					<tr><td>20% Deadly Strike</td></tr>
+					<tr><td>Hit Blinds Target</td></tr>
+					<tr><td>30% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Daylight (Sorceress Orbs only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Fal • Um</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level (4-7) Conviction Aura when Equipped</td></tr>
+					<tr><td>+3 to Sorceress Skills</td></tr>
+					<tr><td>+30% Faster Cast Rate</td></tr>
+					<tr><td>Ignore Target's Defense</td></tr>
+					<tr><td>25% Chance of Open Wounds</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>Increase Maximum Mana 50%</td></tr>
+					<tr><td>Regenerate Mana 50%</td></tr>
+					<tr><td>Curse Length Reduced by 25%</td></tr>
+					<tr><td>Level 7 Lower Resist (33 Charges)</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Prowess in Battle (Barbarian Helms only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Ist • Fal</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Level 6 Fanaticism Aura when Equipped</td></tr>
+					<tr><td>+2 to Barbarian Skills</td></tr>
+					<tr><td>+(30-40)% Faster Hit Recovery</td></tr>
+					<tr><td>+(75-100)% Enhanced Damage</td></tr>
+					<tr><td>50% Bonus to Attack Rating</td></tr>
+					<tr><td>-(20-30)% to Enemy Physical Resistance</td></tr>
+					<tr><td>+3 to Defense (Based on CLvl)</td></tr>
+					<tr><td>+10 to Strength</td></tr>
+					<tr><td>Increase Maximum Life 5%</td></tr>
+					<tr><td>25% Magic Find</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Time (Druid Pelts only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Amn • Lo</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>50% Ctc Level 25 Frost Nova when You Kill An Enemy</td></tr>
+					<tr><td>+(2-3) to Cold Skills</td></tr>
+					<tr><td>+1 to Blink</td></tr>
+					<tr><td>+3 to Random Druid Skill</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+(160-220)% Enhanced Defense</td></tr>
+					<tr><td>+(35-50) to Life</td></tr>
+					<tr><td>Increase Maximum Life 5%</td></tr>
+					<tr><td>+5% to Maximum Cold Resist</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Time (Druid Pelts only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Jah • Amn • Lo</th></tr>
+					<tr><th scope="col">Required Level: 65</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>50% Ctc Level 25 Frost Nova when You Kill An Enemy</td></tr>
+					<tr><td>+(2-3) to Cold Skills</td></tr>
+					<tr><td>+1 to Blink</td></tr>
+					<tr><td>+3 to Random Druid Skill</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>+(160-220)% Enhanced Defense</td></tr>
+					<tr><td>+(35-50) to Life</td></tr>
+					<tr><td>Increase Maximum Life 5%</td></tr>
+					<tr><td>+5% to Maximum Cold Resist</td></tr>
+					<tr><td>Attacker Takes Physical Damage of 14</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Elation (Amazon Bows only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Shael • Nef • Cham • Thul • Vex</th></tr>
+					<tr><th scope="col">Required Level: 67</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>35% Ctc Level 18 Nova when Struck</td></tr>
+					<tr><td>100% Ctc Level 60 Nova when You Die</td></tr>
+					<tr><td>+20% Increased Attack Speed</td></tr>
+					<tr><td>+(40-75) to Minimum Damage</td></tr>
+					<tr><td>+2.5 to Maximum Damage (Based on CLvl)</td></tr>
+					<tr><td>Adds 3-14 Cold Damage</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>+(20-25)% to Fire Skill Damage</td></tr>
+					<tr><td>+(20-25)% to Cold Skill Damage</td></tr>
+					<tr><td>Prevent Monster Heal</td></tr>
+					<tr><td>Freezes Target +3</td></tr>
+					<tr><td>Knockback</td></tr>
+				  </tbody>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Darkness (Assassin Claws only)</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+				<table class="table table-striped table-bordered table-sm">
+				  <thead>
+					<tr><th scope="col">Zod • Amn • Vex</th></tr>
+					<tr><th scope="col">Required Level: 69</th></tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Indestructible</td></tr>
+					<tr><td>+3 to Assassin Skills</td></tr>
+					<tr><td>Adds 75-150 Damage</td></tr>
+					<tr><td>7% Mana Stolen per Hit</td></tr>
+					<tr><td>7% Life Stolen per Hit</td></tr>
+					<tr><td>+(0.375-0.75) to Dexterity (Based on CLvl)</td></tr>
+					<tr><td>+(0.375-0.75) to Vitality (Based on CLvl)</td></tr>
+					<tr><td>All Resistances +(20-40)</td></tr>
+					<tr><td>Physical Damage Reduced by 15%</td></tr>
+					<tr><td>250% Magic Find</td></tr>
+				 </table>
+				 </div>
+				 </div>
+				 </details>
+			  </div>
+			</div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div> <!-- /container -->
+
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <script src="accordion.js"></script>
+  <script src="dark-mode-switch.min.js"></script>
+</body>
+
+</html>

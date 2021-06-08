@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The Forces of Darkness - Diablo II Modification</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right border-danger" id="sidebar-wrapper">
+     <div class="sticky-top">
+      <div class="sidebar-heading"><a href="index.html"><b>TFoD</b></a></div>
+      <div class="list-group list-group-flush">
+        <a href="changes.html" class="list-group-item list-group-item-action bg-light">General changes</a>
+        <a href="recipes.html" class="list-group-item list-group-item-action bg-light">Cube recipes</a>
+        <a href="consumables.html" class="list-group-item list-group-item-action bg-light">Consumables</a>
+        <a href="crafting.html" class="list-group-item active list-group-item-action bg-light">Crafting recipes</a>
+        <a href="corruptions.html" class="list-group-item list-group-item-action bg-light">Corruptions</a>
+        <a href="runewords.html" class="list-group-item list-group-item-action bg-light">Runewords</a>
+        <a href="mercs.html" class="list-group-item list-group-item-action bg-light">Mercenaries</a>
+        <a href="areas.html" class="list-group-item list-group-item-action bg-light">Level area changes</a>
+        <a href="subquests.html" class="list-group-item list-group-item-action bg-light">Subquests and uberquests</a>
+        <a href="credits.html" class="list-group-item list-group-item-action bg-light">Credits</a>
+        <a href="contact.html" class="list-group-item list-group-item-action bg-light">Contact</a>
+	  </div>
+	 </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light navbar-light bg-light border-bottom border-danger sticky-top">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="nav-link">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.moddb.com/mods/the-forces-of-darkness">Moddb</a>
+            </li>
+			<li class="nav-item">
+              <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.buymeacoffee.com/jessedazebra">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid mx-3">
+        <h1 class="mt-4">Crafting Recipes</h1>
+			<p>Crafted items now always spawn with 3 fixed properties and 4 random magical prefixes/suffixes.<br>Removed level requirement penalty on crafted items.<br>Ethereal items remain ethereal after crafting.</p>
+			<div class="jumbotron">
+			<div class="accordion-flush">
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Hit Power items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Hit Power Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>5% Ctc Level 8 Frost Nova When Struck</li><li>Attacker Takes Cold Damage of (10-20)</li><li>(40-80) Defense vs. Missiles</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>5% Ctc Level 8 Frost Nova When Struck</li><li>Attacker Takes Cold Damage of (10-20)</li><li>(40-80) Defense vs. Melee</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>5% Ctc Level 8 Frost Nova On Striking</li><li>Attacker Takes Cold Damage of (10-20)</li><li>Knockback</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>5% Ctc Level 8 Frost Nova When Struck</li><li>Attacker Takes Cold Damage of (10-20)</li><li>(10-20)% Damage Taken Goes to Mana</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>7% Ctc Level 12 Frost Nova When Struck</li><li>Attacker Takes Cold Damage of (15-30)</li><li>(10-20)% Increased Chance of Blocking</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>7% Ctc Level 12 Frost Nova When Struck</li><li>Attacker Takes Cold Damage of (15-30)</li><li>(10-20)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>5% Ctc Level 8 Frost Nova When Struck</li><li>Attacker Takes Cold Damage of (10-20)</li><li>+(2-4) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>5% Ctc Level 8 Frost Nova When Struck</li><li>Attacker Takes Cold Damage of (10-20)</li><li>+(5-10) to Dexterity</li></td>
+				</tr>
+				<tr>
+				  <td>Hit Power Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Sapphire</li></td>
+				  <td><li>5% Ctc Level 8 Frost Nova On Striking</li><li>Attacker Takes Cold Damage of (10-20)</li><li>+(40-80%) Enhanced Damage</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+			
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Blood items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Blood Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(2-4)% Life Stolen per Hit</li><li>(10-20)% Deadly Strike</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(2-4)% Life Stolen per Hit</li><li>Replenish Life +(10-20)</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(3-6)% Life Stolen per Hit</li><li>Chance of Crushing Blow (10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(2-4)% Life Stolen per Hit</li><li>Chance of Open Wounds (10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(2-4)% Life Stolen per Hit</li><li>(10-20)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(2-4)% Life Stolen per Hit</li><li>+(2-4) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(2-4)% Life Stolen per Hit</li><li>+(10-15)% Faster Run/Walk</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(2-4)% Life Stolen per Hit</li><li>+(5-10) to Strength</li></td>
+				</tr>
+				<tr>
+				  <td>Blood Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Ruby</li></td>
+				  <td><li>+(10-20) to Life</li><li>(4-8)% Life Stolen per Hit</li><li>+(40-80%) Enhanced Damage</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Caster items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Caster Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (20-40)%</li><li>(2-4)% Mana Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (20-40)%</li><li>Increase Maximum Mana (5-10)%</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (10-20)%</li><li>+(2-4) Mana on Kill</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (20-40)%</li><li>(10-20)% Damage Taken Goes to Mana</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (15-30)%</li><li>+(10-20)% Increased Chance Of Blocking</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (20-40)%</li><li>Magic Damage Reduced By (3-6)</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (20-40)%</li><li>+(10-15)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (20-40)%</li><li>+(5-10) to Energy</li></td>
+				</tr>
+				<tr>
+				  <td>Caster Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amethyst</li></td>
+				  <td><li>+(10-20) to Mana</li><li>Regenerate Mana (10-20)%</li><li>Ignore Target's Defense</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Safety items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Safety Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (3-6)</li><li>Lightning Resist +(10-15)%</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (3-6)</li><li>Fire Resist +(10-15)%</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (3-6)</li><li>Cold Resist +(10-15)%</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (3-6)</li><li>Poison Resist +(10-15)%</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (4-8)</li><li>Magic Resist +(10-15)%</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (4-8)</li><li>Increased Attack Speed +(10-15)%</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (3-6)</li><li>+(5-10)% Increased Chance Of Blocking</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (3-6)</li><li>+(5-10) to Vitality</li></td>
+				</tr>
+				<tr>
+				  <td>Safety Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Emerald</li></td>
+				  <td><li>+(5-10)% Increased Dexterity</li><li>Magic Damage Reduced By (3-6)</li><li>+(25-50)% Enhanced Defense</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Static items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Static Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>5% Ctc Level 8 Nova When Struck</li><li>Attacker Takes Lightning Damage of (10-20)</li><li>+(25-50) to Defense</li></td>
+				</tr>
+				<tr>
+				  <td>Static Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>5% Ctc Level 8 Nova When Struck</li><li>Attacker Takes Lightning Damage of (10-20)</li><li>All Resistances +(5-10)</li></td>
+				</tr>
+				<tr>
+				  <td>Static Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>5% Ctc Level 8 Nova On Striking</li><li>Attacker Takes Lightning Damage of (10-20)</li><li>(15-30)% Bonus to Attack Rating</li></td>
+				</tr>
+				<tr>
+				  <td>Static Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>5% Ctc Level 8 Nova When Struck</li><li>Attacker Takes Lightning Damage of (10-20)</li><li>Damage Reduced By (3-6)%</li></td>
+				</tr>
+				<tr>
+				  <td>Static Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>7% Ctc Level 12 Nova When Struck</li><li>Attacker Takes Lightning Damage of (15-30)</li><li>Curse Length Reduced by (10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td>Static Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>7% Ctc Level 12 Nova When Struck</li><li>Attacker Takes Lightning Damage of (15-30)</li><li>Increase Maximum Life (5-10)%</li></td>
+				</tr>
+				<tr>
+				  <td>Static Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>5% Ctc Level 8 Nova When Struck</li><li>Attacker Takes Lightning Damage of (10-20)</li><li>+(2-4)% to Experience Gained</li></td>
+				</tr>
+				<tr>
+				  <td>Static Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>5% Ctc Level 8 Nova When Struck</li><li>Attacker Takes Lightning Damage of (10-20)</li><li>(2-4)% Life Stolen per Hit</li></td>
+				</tr>
+				<tr>
+				  <td>Static Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Topaz</li></td>
+				  <td><li>5% Ctc Level 8 Nova On Striking</li><li>Attacker Takes Lightning Damage of (10-20)</li><li>Slows Target by (15-30)%</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Strength items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Strength Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (3-6)</li><li>Increase Maximum Life (5-10)%</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (3-6)</li><li>Slows Target by (10-15)%</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (3-6)</li><li>-(50-75)% to Monster Defense Per Hit</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (3-6)</li><li>+(5-10)% Increased Chance Of Blocking</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (4-8)</li><li>Poison Length Reduced by (15-30)%</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (4-8)</li><li>+(5-10) to All Attributes</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (3-6)</li><li>Reduces all Vendor Prices (2-4)%</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (3-6)</li><li>+(25-50) to Defense</li></td>
+				</tr>
+				<tr>
+				  <td>Strength Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Diamond</li></td>
+				  <td><li>+(5-10)% Increased Strength</li><li>Damage Reduced By (3-6)</li><li>Chance of Crushing Blow (10-20)%</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Sea items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Sea Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(2-4)% Mana Stolen per Hit</li><li>+(2-4) Life on Kill</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(2-4)% Mana Stolen per Hit</li><li>+(10-20)% Faster Run/Walk</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(3-6)% Mana Stolen per Hit</li><li>-(3-6)% to Enemy Physical Resistance</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(2-4)% Mana Stolen per Hit</li><li>+(25-50) to Defense</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(2-4)% Mana Stolen per Hit</li><li>+(3-6) Cold Absorb</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(2-4)% Mana Stolen per Hit</li><li>Regenerate Mana (25-50)%</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(3-6)% Mana Stolen per Hit</li><li>(30-60)% Gold Find</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(3-6)% Mana Stolen per Hit</li><li>+(5-10)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td>Sea Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Beryl</li></td>
+				  <td><li>+(5-10)% Increased Energy</li><li>(4-8)% Mana Stolen per Hit</li><li>+(3-6) Mana on Kill</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+	
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Amber items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Amber Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (10-20)</li><li>-(3-6)% to Enemy Lightning Resistance</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (10-20)</li><li>-(3-6)% to Enemy Fire Resistance</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (10-20)</li><li>-(3-6)% to Enemy Cold Resistance</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (10-20)</li><li>-(3-6)% to Enemy Poison Resistance</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (10-20)</li><li>+(3-6) Fire Absorb</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (15-30)</li><li>-(3-6)% to Enemy Magic Resistance</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (15-30)</li><li>+(2-4) Life after each Kill</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (10-20)</li><li>Replenish Life +(15-30)</li></td>
+				</tr>
+				<tr>
+				  <td>Amber Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Amber</li></td>
+				  <td><li>+(5-10)% Increased Vitality</li><li>Attacker Takes Fire Damage of (10-20)</li><li>-(3-6)% to Enemy Physical Resistance</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+		
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Deadly items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Deadly Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>5% Ctc Level 8 Bone Spirit When Struck</li><li>Attacker Takes Damage of (10-20)</li><li>+(3-6)% to Lightning Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>5% Ctc Level 8 Bone Spirit When Struck</li><li>Attacker Takes Damage of (10-20)</li><li>+(3-6)% to Fire Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>5% Ctc Level 8 Bone Spirit On Striking</li><li>Attacker Takes Damage of (10-20)</li><li>+(3-6)% to Cold Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>5% Ctc Level 8 Bone Spirit When Struck</li><li>Attacker Takes Damage of (10-20)</li><li>+(3-6)% to Poison Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>7% Ctc Level 12 Bone Spirit When Struck</li><li>Attacker Takes Damage of (10-20)</li><li>+(3-6) Lightning Absorb</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>7% Ctc Level 12 Bone Spirit When Struck</li><li>Attacker Takes Damage of (15-30)</li><li>+(3-6)% to Magic Skill Damage</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>5% Ctc Level 8 Bone Spirit When Struck</li><li>Attacker Takes Damage of (15-30)</li><li>(10-20)% Deadly Strike</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>5% Ctc Level 8 Bone Spirit When Struck</li><li>Attacker Takes Damage of (10-20)</li><li>Chance of Crushing Blow (10-20)%</li></td>
+				</tr>
+				<tr>
+				  <td>Deadly Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Obsidian</li></td>
+				  <td><li>5% Ctc Level 8 Bone Spirit On Striking</li><li>Attacker Takes Damage of (10-20)</li><li>+(10-20)% Increased Attack Speed</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+					
+				<details class="card w-75">
+				<summary class="card-header">
+				<h2 class="mb-0">
+				<span class="btn btn-link">Purifying items</span>
+				</h2>
+				</summary>
+				<div class="card-body">
+				<div class="jumbotron">
+			<table class="table table-striped table-bordered table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">Crafted Item</th>
+				  <th scope="col">Crafted Recipe</th>
+				  <th scope="col">Fixed Effects</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Purifying Helm</td>
+				  <td><li>Magic Helm</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>5% Ctc Level 8 Holy Bolt When Struck</li><li>Curse Length Reduced by (10-20)%</li><li>(10-20)% Magic Find</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Boots</td>
+				  <td><li>Magic Boots</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>5% Ctc Level 8 Holy Bolt When Struck</li><li>Curse Length Reduced by (10-20)%</li><li>+(5-10)% Faster Cast Rate</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Gloves</td>
+				  <td><li>Magic Gloves</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>5% Ctc Level 8 Holy Bolt On Striking</li><li>Curse Length Reduced by (5-10)%</li><li>+(75-100) to Attack Rating</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Belt</td>
+				  <td><li>Magic Belt</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>5% Ctc Level 8 Holy Bolt When Struck</li><li>Curse Length Reduced by (5-10)%</li><li>Increase Maximum Mana (5-10)%</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Shield</td>
+				  <td><li>Magic Shield</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>7% Ctc Level 12 Holy Bolt When Struck</li><li>Curse Length Reduced by (15-30)%</li><li>+(3-6) Magic Absorb</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Torso</td>
+				  <td><li>Magic Torso</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>7% Ctc Level 12 Holy Bolt When Struck</li><li>Curse Length Reduced by (15-30)%</li><li>Damage Reduced By (3-6)%</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Amulet</td>
+				  <td><li>Magic Amulet</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>5% Ctc Level 8 Holy Bolt When Struck</li><li>Curse Length Reduced by (10-20)%</li><li>(10-20)% Damage Taken Goes to Mana</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Ring</td>
+				  <td><li>Magic Ring</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>5% Ctc Level 8 Holy Bolt When Struck</li><li>Curse Length Reduced by (10-20)%</li><li>(10-20)% Faster Hit Recovery</li></td>
+				</tr>
+				<tr>
+				  <td>Purifying Weapon</td>
+				  <td><li>Magic Weapon</li><li>Mystic Orb</li><li>Jewel</li><li>Perfect Aquamarine</li></td>
+				  <td><li>5% Ctc Level 8 Holy Bolt On Striking</li><li>Curse Length Reduced by (5-10)%</li><li>+(40-80%) Enhanced Damage</li></td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				</div>
+				</details>
+			  </div>											
+			</div>											
+		  </div>											
+		</div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div> <!-- /container -->
+
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <script src="accordion.js"></script>
+  <script src="dark-mode-switch.min.js"></script>
+</body>
+
+</html>
