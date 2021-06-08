@@ -1,0 +1,181 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+
+[data-theme="dark"] {
+  background-color: #111 !important;
+  color: #bbb;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #111 !important;
+}
+
+[data-theme="dark"] .card-header {
+  background-color: #2f2626 !important;
+}
+
+[data-theme="dark"] .jumbotron {
+  background-color: #111 !important;
+}
+
+[data-theme="dark"] .btn {
+  color: #c44 !important;
+}
+
+[data-theme="dark"] .border-danger {
+  border-color: #c44 !important;
+}
+
+[data-theme="dark"] .custom-control-label {
+  color: #111 !important;
+}
+
+[data-theme="dark"] .navbar-light {
+  background-color: #b44 !important;
+}
+
+[data-theme="dark"] a {
+  color: #eee !important;
+}
+
+[data-theme="dark"] a:hover {
+  color: #aaa !important;
+}
+
+[data-theme="dark"] a.list-group-item:hover {
+  background-color: #1a1919 !important;
+  border-color: #1a1919 !important;
+}
+
+[data-theme="dark"] .list-group-item.active {
+  background-color: #1a1919 !important;
+  border-color: #1a1919 !important;
+}
+
+[data-theme="dark"] table.table-bordered > thead > tr > th {
+  border-color: #999;
+}
+
+[data-theme="dark"] table.table-bordered > tbody > tr > td {
+  border-color: #555;
+}
+
+[data-theme="dark"] li::marker {
+  color: #c44;
+}
+
+[data-theme="dark"] img { 
+  filter: invert(75%);
+}
+
+[data-theme="dark"] th {
+  color: #c44;
+}
+
+[data-theme="dark"] h1 {
+  color: #c44;
+}
+
+a {
+  color: #001b1b !important;
+}
+
+a:hover {
+  color: #006868 !important;
+}
+
+th {
+  color: #111;
+}
+
+td {
+  border-color: #111;
+}
+
+h1 {
+  color: #111;
+}
+
+a.list-group-item:hover {
+  background-color: #c7c7c7 !important;
+  border-color: #c7c7c7 !important;
+}
+
+.list-group-item.active {
+  background-color: #c7c7c7 !important;
+  border-color: #c7c7c7 !important;
+}
+
+.border-danger {
+  border-color: #bcbcc4 !important;
+}
+
+.jumbotron {
+    background-color: transparent !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+details > summary {
+  list-style: none;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
